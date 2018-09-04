@@ -1,0 +1,17 @@
+TestPoemFile.java
+ThesaurusLoaderTest.java
+TestDbHelper.java
+DictionaryRouterTest.java
+PoemTest.java
+ActivityTestRules.java
+TtsTest.java
+RhymerRouterTest.java
+FavoritesTest.java
+RandomWordTest.java
+SearchTest.java
+IntegrationTest.java
+ShareTest.java
+PoemSaveTest.java
+CustomChecks.java
+IntentTest.java
+ThesaurusRouterTest.java

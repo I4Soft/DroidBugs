@@ -1,0 +1,11 @@
+ca.rmen.android.poetassistant.main.DictionaryRouterTest#onTextRouted
+ca.rmen.android.poetassistant.main.IntegrationTest#cleanLayout1Test
+ca.rmen.android.poetassistant.main.IntegrationTest#integrationTest2
+ca.rmen.android.poetassistant.main.RandomWordTest#openWotdListTest
+
+Became negative in PRJ_Fix
+
+ca.rmen.android.poetassistant.main.ShareTest#sharePoemTest
+
+
+

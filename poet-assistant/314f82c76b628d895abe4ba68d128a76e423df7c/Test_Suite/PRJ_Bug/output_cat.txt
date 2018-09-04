@@ -1,0 +1,145 @@
+Jack is disabled, but one of the plugins you are using supports Java 8 language features.
+Jack is disabled, but one of the plugins you are using supports Java 8 language features.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:extractProguardFiles
+:app:preReleaseBuild
+:app:prepareComAndroidDatabindingAdapters131Library
+:app:prepareComAndroidDatabindingLibrary131Library
+:app:prepareComAndroidSupportAnimatedVectorDrawable2531Library
+:app:prepareComAndroidSupportAppcompatV72531Library
+:app:prepareComAndroidSupportDesign2531Library
+:app:prepareComAndroidSupportPreferenceV142531Library
+:app:prepareComAndroidSupportPreferenceV72531Library
+:app:prepareComAndroidSupportRecyclerviewV72531Library
+:app:prepareComAndroidSupportSupportCompat2531Library
+:app:prepareComAndroidSupportSupportCoreUi2531Library
+:app:prepareComAndroidSupportSupportCoreUtils2531Library
+:app:prepareComAndroidSupportSupportFragment2531Library
+:app:prepareComAndroidSupportSupportMediaCompat2531Library
+:app:prepareComAndroidSupportSupportV42531Library
+:app:prepareComAndroidSupportSupportVectorDrawable2531Library
+:app:prepareComAndroidSupportTransition2531Library
+:app:prepareIoReactivexRxjava2Rxandroid201Library
+:app:prepareDebugDependencies
+:app:compileDebugRenderscript UP-TO-DATE
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:app:mergeDebugResources UP-TO-DATE
+:app:dataBindingProcessLayoutsDebug UP-TO-DATE
+:app:compileDebugAidl UP-TO-DATE
+:app:generateDebugBuildConfig UP-TO-DATE
+:app:processDebugManifest UP-TO-DATE
+:app:processDebugResources UP-TO-DATE
+:app:generateDebugSources UP-TO-DATE
+:app:dataBindingExportBuildInfoDebug UP-TO-DATE
+:app:incrementalDebugJavaCompilationSafeguard UP-TO-DATE
+:app:javaPreCompileDebug
+:app:unzipJacocoAgent UP-TO-DATE
+:app:transformClassesAndDataBindingWithDataBindingMergeArtifactsForDebug UP-TO-DATE
+:app:compileDebugJavaWithJavac UP-TO-DATE
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources UP-TO-DATE
+:app:mergeDebugShaders
+:app:compileDebugShaders
+:app:generateDebugAssets
+:app:mergeDebugAssets
+:app:transformClassesWithJacocoForDebug
+:app:transformClassesWithRetrolambdaForDebug
+:app:transformClassesWithDexForDebug
+
+Running dex as a separate process.
+
+To run dex in process, the Gradle daemon needs a larger heap.
+It currently has 1024 MB.
+For faster builds, increase the maximum heap size for the Gradle daemon to at least 1536 MB.
+To do this set org.gradle.jvmargs=-Xmx1536M in the project gradle.properties.
+For more information see https://docs.gradle.org/current/userguide/build_environment.html
+
+:app:mergeDebugJniLibFolders
+:app:transformNativeLibsWithMergeJniLibsForDebug
+:app:transformNativeLibsWithStripDebugSymbolForDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForDebug
+:app:validateSigningDebug
+:app:packageDebug
+:app:assembleDebug
+:app:countDebugDexMethods
+Total methods in app-debug.apk: 38809 (59,22% used)
+Total fields in app-debug.apk:  24477 (37,35% used)
+Methods remaining in app-debug.apk: 26726
+Fields remaining in app-debug.apk:  41058
+:app:preDebugAndroidTestBuild UP-TO-DATE
+:app:prepareComAndroidSupportTestEspressoEspressoContrib222Library
+:app:prepareComAndroidSupportTestEspressoEspressoCore222Library
+:app:prepareComAndroidSupportTestEspressoEspressoIdlingResource222Library
+:app:prepareComAndroidSupportTestEspressoEspressoIntents222Library
+:app:prepareComAndroidSupportTestExposedInstrumentationApiPublish05Library
+:app:prepareComAndroidSupportTestRules05Library
+:app:prepareComAndroidSupportTestRunner05Library
+:app:prepareDebugAndroidTestDependencies
+:app:compileDebugAndroidTestAidl
+:app:processDebugAndroidTestManifest
+:app:compileDebugAndroidTestRenderscript
+:app:generateDebugAndroidTestBuildConfig
+:app:generateDebugAndroidTestResValues
+:app:generateDebugAndroidTestResources
+:app:mergeDebugAndroidTestResources
+:app:processDebugAndroidTestResources
+:app:generateDebugAndroidTestSources
+:app:incrementalDebugAndroidTestJavaCompilationSafeguard
+:app:javaPreCompileDebugAndroidTest
+:app:compileDebugAndroidTestJavaWithJavac
+:app:compileDebugAndroidTestNdk UP-TO-DATE
+:app:compileDebugAndroidTestSources
+:app:mergeDebugAndroidTestShaders
+:app:compileDebugAndroidTestShaders
+:app:generateDebugAndroidTestAssets
+:app:mergeDebugAndroidTestAssets
+:app:transformClassesWithRetrolambdaForDebugAndroidTest
+:app:transformClassesWithDexForDebugAndroidTest
+:app:mergeDebugAndroidTestJniLibFolders
+:app:transformNativeLibsWithMergeJniLibsForDebugAndroidTest
+:app:processDebugAndroidTestJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForDebugAndroidTest
+:app:validateSigningDebugAndroidTest
+:app:packageDebugAndroidTest
+:app:assembleDebugAndroidTest
+:app:connectedDebugAndroidTest
+Starting 49 tests on TESTE(AVD) - 7.1.1
+
+ca.rmen.android.poetassistant.main.DictionaryRouterTest > onTextRouted[TESTE(AVD) - 7.1.1] [31mFAILED [0m
+	java.lang.RuntimeException: Could not launch intent Intent { act=android.intent.action.PROCESS_TEXT flg=0x14000000 cmp=ca.rmen.android.poetassistant/.main.dictionaries.search.DictionaryRouterActivity (has extras) } within 45 seconds. Perhaps the main thread has not gone idle within a reasonable amount of time? There could be an animation or something constantly repainting the screen. Or the activity is doing network calls on creation? See the threaddump logs. For your reference the last time the event queue was idle before your activity launch request was 1508364505760 and now the last time the queue went idle was: 1508364507390. If these numbers are the same your activity might be hogging the event queue.
+	at android.support.test.runner.MonitoringInstrumentation.startActivitySync(MonitoringInstrumentation.java:360)
+
+ca.rmen.android.poetassistant.main.FavoritesTest > favoritesTest[TESTE(AVD) - 7.1.1] [31mFAILED [0m
+	android.support.test.espresso.NoMatchingViewException: No views in hierarchy found matching: (with id: ca.rmen.android.poetassistant:id/btn_star_query and is displayed on the screen to the user)
+	
+
+ca.rmen.android.poetassistant.main.IntegrationTest > cleanLayout1Test[TESTE(AVD) - 7.1.1] [31mFAILED [0m
+	android.support.test.espresso.PerformException: Error performing 'single click - At Coordinates: 159, 269 and precision: 16, 16' on view '(with id: ca.rmen.android.poetassistant:id/edit and is displayed on the screen to the user)'.
+	at android.support.test.espresso.PerformException$Builder.build(PerformException.java:83)
+
+ca.rmen.android.poetassistant.main.IntegrationTest > cleanLayout2Test[TESTE(AVD) - 7.1.1] [31mFAILED [0m
+	android.support.test.espresso.PerformException: Error performing 'single click - At Coordinates: 159, 269 and precision: 16, 16' on view '(with id: ca.rmen.android.poetassistant:id/edit and is displayed on the screen to the user)'.
+	at android.support.test.espresso.PerformException$Builder.build(PerformException.java:83)
+
+ca.rmen.android.poetassistant.main.IntegrationTest > integrationTest1[TESTE(AVD) - 7.1.1] [31mFAILED [0m
+	android.support.test.espresso.NoMatchingViewException: No views in hierarchy found matching: (with text: equalToIgnoringCase("Favorites") and Child at position 1 in parent (with id: ca.rmen.android.poetassistant:id/pager_title_strip and has parent matching: with id: ca.rmen.android.poetassistant:id/view_pager) and at least 100 percent of the view's area is displayed to the user.)
+	
+
+ca.rmen.android.poetassistant.main.IntegrationTest > integrationTest2[TESTE(AVD) - 7.1.1] [31mFAILED [0m
+	android.support.test.espresso.NoMatchingViewException: No views in hierarchy found matching: (with text: equalToIgnoringCase("Favorites") and Child at position 1 in parent (with id: ca.rmen.android.poetassistant:id/pager_title_strip and has parent matching: with id: ca.rmen.android.poetassistant:id/view_pager) and at least 100 percent of the view's area is displayed to the user.)
+	
+
+ca.rmen.android.poetassistant.main.RandomWordTest > openWotdListTest[TESTE(AVD) - 7.1.1] [31mFAILED [0m
+	android.support.test.espresso.PerformException: Error performing 'single click' on view '(with id: ca.rmen.android.poetassistant:id/btn_star_result and is descendant of a: Child at position 0 in parent with id: ca.rmen.android.poetassistant:id/recycler_view)'.
+	at android.support.test.espresso.PerformException$Builder.build(PerformException.java:83)
+
+ca.rmen.android.poetassistant.main.ShareTest > shareRandomWordTest[TESTE(AVD) - 7.1.1] [33mSKIPPED [0m
+:app:connectedDebugAndroidTest FAILED
+
+BUILD FAILED
+
+Total time: 25 mins 28.236 secs

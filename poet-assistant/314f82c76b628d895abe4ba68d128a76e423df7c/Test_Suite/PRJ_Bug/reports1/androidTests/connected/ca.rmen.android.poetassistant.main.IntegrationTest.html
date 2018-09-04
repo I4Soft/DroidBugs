@@ -1,0 +1,1245 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Test results - Class ca.rmen.android.poetassistant.main.IntegrationTest</title>
+<link href="css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<script src="js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class ca.rmen.android.poetassistant.main.IntegrationTest</h1>
+<div class="breadcrumbs">
+<a href="index.html">all</a> &gt; 
+<a href="ca.rmen.android.poetassistant.main.html">ca.rmen.android.poetassistant.main</a> &gt; IntegrationTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">8</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">4</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">5m55.39s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">50%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="cleanLayout1Test"></a>
+<h3 class="failures">cleanLayout1Test</h3>
+<span class="code">
+<pre>android.support.test.espresso.PerformException: Error performing 'single click - At Coordinates: 159, 269 and precision: 16, 16' on view '(with id: ca.rmen.android.poetassistant:id/edit and is displayed on the screen to the user)'.
+at android.support.test.espresso.PerformException$Builder.build(PerformException.java:83)
+at android.support.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:80)
+at android.support.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:56)
+at android.support.test.espresso.ViewInteraction.runSynchronouslyOnUiThread(ViewInteraction.java:184)
+at android.support.test.espresso.ViewInteraction.doPerform(ViewInteraction.java:115)
+at android.support.test.espresso.ViewInteraction.perform(ViewInteraction.java:87)
+at ca.rmen.android.poetassistant.main.TestAppUtils.addFilter(TestAppUtils.java:155)
+at ca.rmen.android.poetassistant.main.IntegrationTest.runCleanLayoutIntegrationTest(IntegrationTest.java:167)
+at ca.rmen.android.poetassistant.main.IntegrationTest.cleanLayout1Test(IntegrationTest.java:192)
+at java.lang.reflect.Method.invoke(Native Method)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+at android.support.test.internal.statement.UiThreadStatement.evaluate(UiThreadStatement.java:55)
+at android.support.test.rule.ActivityTestRule$ActivityStatement.evaluate(ActivityTestRule.java:270)
+at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runners.Suite.runChild(Suite.java:128)
+at org.junit.runners.Suite.runChild(Suite.java:27)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1932)
+Caused by: android.support.test.espresso.PerformException: Error performing 'Send down motion event' on view 'unknown'.
+at android.support.test.espresso.PerformException$Builder.build(PerformException.java:83)
+at android.support.test.espresso.action.MotionEvents.sendDown(MotionEvents.java:104)
+at android.support.test.espresso.action.Tap.sendSingleTap(Tap.java:133)
+at android.support.test.espresso.action.Tap.access$100(Tap.java:35)
+at android.support.test.espresso.action.Tap$1.sendTap(Tap.java:40)
+at android.support.test.espresso.action.GeneralClickAction.perform(GeneralClickAction.java:98)
+at android.support.test.espresso.action.TypeTextAction.perform(TypeTextAction.java:99)
+at android.support.test.espresso.ViewInteraction$1.run(ViewInteraction.java:144)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:428)
+at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+at android.os.Handler.handleCallback(Handler.java:751)
+at android.os.Handler.dispatchMessage(Handler.java:95)
+at android.os.Looper.loop(Looper.java:154)
+at android.app.ActivityThread.main(ActivityThread.java:6119)
+at java.lang.reflect.Method.invoke(Native Method)
+at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+Caused by: android.support.test.espresso.InjectEventSecurityException: java.lang.SecurityException: Injecting to another application requires INJECT_EVENTS permission
+at android.support.test.espresso.base.InputManagerEventInjectionStrategy.innerInjectMotionEvent(InputManagerEventInjectionStrategy.java:162)
+at android.support.test.espresso.base.InputManagerEventInjectionStrategy.innerInjectMotionEvent(InputManagerEventInjectionStrategy.java:160)
+at android.support.test.espresso.base.InputManagerEventInjectionStrategy.injectMotionEvent(InputManagerEventInjectionStrategy.java:132)
+at android.support.test.espresso.base.EventInjector.injectMotionEvent(EventInjector.java:96)
+at android.support.test.espresso.base.UiControllerImpl$3.call(UiControllerImpl.java:223)
+at android.support.test.espresso.base.UiControllerImpl$3.call(UiControllerImpl.java:220)
+at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:428)
+at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1133)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:607)
+at java.lang.Thread.run(Thread.java:761)
+Caused by: java.lang.SecurityException: Injecting to another application requires INJECT_EVENTS permission
+at android.os.Parcel.readException(Parcel.java:1684)
+at android.os.Parcel.readException(Parcel.java:1637)
+at android.hardware.input.IInputManager$Stub$Proxy.injectInputEvent(IInputManager.java:537)
+at android.hardware.input.InputManager.injectInputEvent(InputManager.java:865)
+at java.lang.reflect.Method.invoke(Native Method)
+at android.support.test.espresso.base.InputManagerEventInjectionStrategy.innerInjectMotionEvent(InputManagerEventInjectionStrategy.java:146)
+... 11 more
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="cleanLayout2Test"></a>
+<h3 class="failures">cleanLayout2Test</h3>
+<span class="code">
+<pre>android.support.test.espresso.PerformException: Error performing 'single click - At Coordinates: 159, 269 and precision: 16, 16' on view '(with id: ca.rmen.android.poetassistant:id/edit and is displayed on the screen to the user)'.
+at android.support.test.espresso.PerformException$Builder.build(PerformException.java:83)
+at android.support.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:80)
+at android.support.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:56)
+at android.support.test.espresso.ViewInteraction.runSynchronouslyOnUiThread(ViewInteraction.java:184)
+at android.support.test.espresso.ViewInteraction.doPerform(ViewInteraction.java:115)
+at android.support.test.espresso.ViewInteraction.perform(ViewInteraction.java:87)
+at ca.rmen.android.poetassistant.main.TestAppUtils.addFilter(TestAppUtils.java:155)
+at ca.rmen.android.poetassistant.main.IntegrationTest.runCleanLayoutIntegrationTest(IntegrationTest.java:167)
+at ca.rmen.android.poetassistant.main.IntegrationTest.cleanLayout2Test(IntegrationTest.java:197)
+at java.lang.reflect.Method.invoke(Native Method)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+at android.support.test.internal.statement.UiThreadStatement.evaluate(UiThreadStatement.java:55)
+at android.support.test.rule.ActivityTestRule$ActivityStatement.evaluate(ActivityTestRule.java:270)
+at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runners.Suite.runChild(Suite.java:128)
+at org.junit.runners.Suite.runChild(Suite.java:27)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1932)
+Caused by: android.support.test.espresso.PerformException: Error performing 'Send down motion event' on view 'unknown'.
+at android.support.test.espresso.PerformException$Builder.build(PerformException.java:83)
+at android.support.test.espresso.action.MotionEvents.sendDown(MotionEvents.java:104)
+at android.support.test.espresso.action.Tap.sendSingleTap(Tap.java:133)
+at android.support.test.espresso.action.Tap.access$100(Tap.java:35)
+at android.support.test.espresso.action.Tap$1.sendTap(Tap.java:40)
+at android.support.test.espresso.action.GeneralClickAction.perform(GeneralClickAction.java:98)
+at android.support.test.espresso.action.TypeTextAction.perform(TypeTextAction.java:99)
+at android.support.test.espresso.ViewInteraction$1.run(ViewInteraction.java:144)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:428)
+at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+at android.os.Handler.handleCallback(Handler.java:751)
+at android.os.Handler.dispatchMessage(Handler.java:95)
+at android.os.Looper.loop(Looper.java:154)
+at android.app.ActivityThread.main(ActivityThread.java:6119)
+at java.lang.reflect.Method.invoke(Native Method)
+at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+Caused by: android.support.test.espresso.InjectEventSecurityException: java.lang.SecurityException: Injecting to another application requires INJECT_EVENTS permission
+at android.support.test.espresso.base.InputManagerEventInjectionStrategy.innerInjectMotionEvent(InputManagerEventInjectionStrategy.java:162)
+at android.support.test.espresso.base.InputManagerEventInjectionStrategy.innerInjectMotionEvent(InputManagerEventInjectionStrategy.java:160)
+at android.support.test.espresso.base.InputManagerEventInjectionStrategy.injectMotionEvent(InputManagerEventInjectionStrategy.java:132)
+at android.support.test.espresso.base.EventInjector.injectMotionEvent(EventInjector.java:96)
+at android.support.test.espresso.base.UiControllerImpl$3.call(UiControllerImpl.java:223)
+at android.support.test.espresso.base.UiControllerImpl$3.call(UiControllerImpl.java:220)
+at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:428)
+at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1133)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:607)
+at java.lang.Thread.run(Thread.java:761)
+Caused by: java.lang.SecurityException: Injecting to another application requires INJECT_EVENTS permission
+at android.os.Parcel.readException(Parcel.java:1684)
+at android.os.Parcel.readException(Parcel.java:1637)
+at android.hardware.input.IInputManager$Stub$Proxy.injectInputEvent(IInputManager.java:537)
+at android.hardware.input.InputManager.injectInputEvent(InputManager.java:865)
+at java.lang.reflect.Method.invoke(Native Method)
+at android.support.test.espresso.base.InputManagerEventInjectionStrategy.innerInjectMotionEvent(InputManagerEventInjectionStrategy.java:146)
+... 11 more
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="integrationTest1"></a>
+<h3 class="failures">integrationTest1</h3>
+<span class="code">
+<pre>android.support.test.espresso.NoMatchingViewException: No views in hierarchy found matching: (with text: equalToIgnoringCase(&quot;Favorites&quot;) and Child at position 1 in parent (with id: ca.rmen.android.poetassistant:id/pager_title_strip and has parent matching: with id: ca.rmen.android.poetassistant:id/view_pager) and at least 100 percent of the view's area is displayed to the user.)
+
+View Hierarchy:
++&gt;DecorView{id=-1, visibility=VISIBLE, width=320, height=480, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+|
++-&gt;LinearLayout{id=-1, visibility=VISIBLE, width=320, height=480, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+|
++--&gt;ViewStub{id=16909295, res-name=action_mode_bar_stub, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+|
++--&gt;FrameLayout{id=-1, visibility=VISIBLE, width=320, height=456, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=24.0, child-count=1}
+|
++---&gt;FitWindowsFrameLayout{id=2131689571, res-name=action_bar_root, visibility=VISIBLE, width=320, height=456, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+|
++----&gt;ContentFrameLayout{id=16908290, res-name=content, visibility=VISIBLE, width=320, height=456, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
+|
++-----&gt;CoordinatorLayout{id=-1, visibility=VISIBLE, width=320, height=456, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+|
++------&gt;AppBarLayout{id=2131689608, res-name=app_bar_layout, visibility=VISIBLE, width=320, height=104, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+|
++-------&gt;Toolbar{id=2131689609, res-name=toolbar, visibility=VISIBLE, width=320, height=56, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+|
++--------&gt;ActionMenuView{id=-1, visibility=VISIBLE, width=88, height=56, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=232.0, y=0.0, child-count=2}
+|
++---------&gt;ActionMenuItemView{id=2131689688, res-name=action_search, desc=Search, visibility=VISIBLE, width=48, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=4.0, text=, input-type=0, ime-target=false, has-links=false}
+|
++---------&gt;OverflowMenuButton{id=-1, desc=More options, visibility=VISIBLE, width=40, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=48.0, y=4.0}
+|
++--------&gt;AppCompatTextView{id=-1, visibility=VISIBLE, width=131, height=28, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=14.0, text=Poet Assistant, input-type=0, ime-target=false, has-links=false}
+|
++-------&gt;TabLayout{id=2131689610, res-name=tabs, visibility=VISIBLE, width=320, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=56.0, child-count=1}
+|
++--------&gt;SlidingTabStrip{id=-1, visibility=VISIBLE, width=320, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=5}
+|
++---------&gt;TabView{id=-1, visibility=VISIBLE, width=64, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+|
++----------&gt;AppCompatImageView{id=-1, visibility=VISIBLE, width=24, height=24, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=20.0, y=12.0}
+|
++----------&gt;AppCompatTextView{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+|
++---------&gt;TabView{id=-1, visibility=VISIBLE, width=64, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=64.0, y=0.0, child-count=2}
+|
++----------&gt;AppCompatImageView{id=-1, visibility=VISIBLE, width=24, height=24, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=20.0, y=12.0}
+|
++----------&gt;AppCompatTextView{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+|
++---------&gt;TabView{id=-1, visibility=VISIBLE, width=64, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=128.0, y=0.0, child-count=2}
+|
++----------&gt;AppCompatImageView{id=-1, visibility=VISIBLE, width=24, height=24, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=20.0, y=12.0}
+|
++----------&gt;AppCompatTextView{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+|
++---------&gt;TabView{id=-1, visibility=VISIBLE, width=64, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=true, root-is-layout-requested=false, has-input-connection=false, x=192.0, y=0.0, child-count=2}
+|
++----------&gt;AppCompatImageView{id=-1, visibility=VISIBLE, width=24, height=24, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=true, root-is-layout-requested=false, has-input-connection=false, x=20.0, y=12.0}
+|
++----------&gt;AppCompatTextView{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=true, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+|
++---------&gt;TabView{id=-1, visibility=VISIBLE, width=64, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=256.0, y=0.0, child-count=2}
+|
++----------&gt;AppCompatImageView{id=-1, visibility=VISIBLE, width=24, height=24, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=20.0, y=12.0}
+|
++----------&gt;AppCompatTextView{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+|
++------&gt;ViewPager{id=2131689611, res-name=view_pager, visibility=VISIBLE, width=320, height=456, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=104.0, child-count=6}
+|
++-------&gt;PagerTitleStrip{id=2131689612, res-name=pager_title_strip, visibility=VISIBLE, width=320, height=17, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=960.0, y=0.0, child-count=3}
+|
++--------&gt;TextView{id=-1, visibility=VISIBLE, width=68, height=17, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=DICTIONARY, input-type=0, ime-target=false, has-links=false}
+|
++--------&gt;TextView{id=-1, visibility=VISIBLE, width=44, height=17, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=138.0, y=0.0, text=READER, input-type=0, ime-target=false, has-links=false}
+|
++--------&gt;TextView{id=-1, visibility=VISIBLE, width=61, height=17, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=259.0, y=0.0, text=FAVORITES, input-type=0, ime-target=false, has-links=false}
+|
++-------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=320, height=439, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=17.0, child-count=3}
+|
++--------&gt;FrameLayout{id=2131689628, res-name=result_list_header, visibility=VISIBLE, width=320, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
+|
++---------&gt;LinearLayout{id=2131689670, res-name=list_header, visibility=VISIBLE, width=320, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+|
++----------&gt;RelativeLayout{id=-1, visibility=VISIBLE, width=288, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=0.0, child-count=7}
+|
++-----------&gt;AppCompatTextView{id=2131689671, res-name=tv_list_header, visibility=VISIBLE, width=63, height=30, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=9.0, text=howdy, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatCheckBox{id=2131689672, res-name=btn_star_query, visibility=VISIBLE, width=40, height=35, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=71.0, y=6.0, text=, input-type=0, ime-target=false, has-links=false, is-checked=false}
+|
++-----------&gt;AppCompatImageButton{id=2131689673, res-name=btn_help, desc=Help, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+|
++-----------&gt;AppCompatImageButton{id=2131689674, res-name=btn_delete, desc=Clear all favorite words?, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+|
++-----------&gt;AppCompatImageButton{id=2131689675, res-name=btn_filter, desc=Filter results, visibility=VISIBLE, width=40, height=40, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=152.0, y=4.0}
+|
++-----------&gt;AppCompatImageButton{id=2131689626, res-name=btn_play, desc=Play, visibility=VISIBLE, width=48, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=240.0, y=0.0}
+|
++-----------&gt;AppCompatImageButton{id=2131689676, res-name=btn_web_search, desc=Search, visibility=VISIBLE, width=48, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=192.0, y=0.0}
+|
++----------&gt;LinearLayout{id=2131689677, res-name=filter, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3}
+|
++-----------&gt;AppCompatTextView{id=2131689678, res-name=tv_filter_label, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=Synonyms of: , input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatTextView{id=2131689679, res-name=tv_filter, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatImageView{id=2131689680, res-name=btn_clear, desc=Clear filter, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+|
++--------&gt;View{id=2131689629, res-name=divider, visibility=VISIBLE, width=320, height=1, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=48.0}
+|
++--------&gt;FrameLayout{id=-1, visibility=VISIBLE, width=320, height=374, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=49.0, child-count=2}
+|
++---------&gt;AppCompatTextView{id=2131689630, res-name=empty, visibility=GONE, width=252, height=30, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=34.0, y=39.0, text=Sorry, no rhymes for “howdy”, input-type=0, ime-target=false, has-links=false}
+|
++---------&gt;RecyclerView{id=2131689631, res-name=recycler_view, visibility=VISIBLE, width=288, height=370, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=4.0, child-count=9}
+|
++----------&gt;AppCompatTextView{id=2131689635, res-name=text1, visibility=VISIBLE, width=288, height=22, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=Strict rhyme matches:, input-type=0, ime-target=false, has-links=false}
+|
++----------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=288, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=22.0, child-count=5}
+|
++-----------&gt;AppCompatCheckBox{id=2131689636, res-name=btn_star_result, visibility=VISIBLE, width=36, height=24, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=8.0, y=12.0, text=, input-type=0, ime-target=false, has-links=false, is-checked=false}
+|
++-----------&gt;AppCompatTextView{id=2131689635, res-name=text1, visibility=VISIBLE, width=96, height=48, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=44.0, y=0.0, text=cloudy, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatImageView{id=2131689637, res-name=btn_rhymer, desc=Rhymer, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=140.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689638, res-name=btn_thesaurus, desc=Thesaurus, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=184.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689639, res-name=btn_dictionary, desc=Dictionary, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=228.0, y=2.0}
+|
++----------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=288, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=70.0, child-count=5}
+|
++-----------&gt;AppCompatCheckBox{id=2131689636, res-name=btn_star_result, visibility=VISIBLE, width=36, height=24, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=8.0, y=12.0, text=, input-type=0, ime-target=false, has-links=false, is-checked=false}
+|
++-----------&gt;AppCompatTextView{id=2131689635, res-name=text1, visibility=VISIBLE, width=96, height=48, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=44.0, y=0.0, text=dowdy, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatImageView{id=2131689637, res-name=btn_rhymer, desc=Rhymer, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=140.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689638, res-name=btn_thesaurus, desc=Thesaurus, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=184.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689639, res-name=btn_dictionary, desc=Dictionary, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=228.0, y=2.0}
+|
++----------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=288, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=118.0, child-count=5}
+|
++-----------&gt;AppCompatCheckBox{id=2131689636, res-name=btn_star_result, visibility=VISIBLE, width=36, height=24, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=8.0, y=12.0, text=, input-type=0, ime-target=false, has-links=false, is-checked=false}
+|
++-----------&gt;AppCompatTextView{id=2131689635, res-name=text1, visibility=VISIBLE, width=96, height=48, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=44.0, y=0.0, text=goudie, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatImageView{id=2131689637, res-name=btn_rhymer, desc=Rhymer, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=140.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689638, res-name=btn_thesaurus, desc=Thesaurus, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=184.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689639, res-name=btn_dictionary, desc=Dictionary, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=228.0, y=2.0}
+|
++----------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=288, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=166.0, child-count=5}
+|
++-----------&gt;AppCompatCheckBox{id=2131689636, res-name=btn_star_result, visibility=VISIBLE, width=36, height=24, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=8.0, y=12.0, text=, input-type=0, ime-target=false, has-links=false, is-checked=false}
+|
++-----------&gt;AppCompatTextView{id=2131689635, res-name=text1, visibility=VISIBLE, width=96, height=48, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=44.0, y=0.0, text=goudy, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatImageView{id=2131689637, res-name=btn_rhymer, desc=Rhymer, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=140.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689638, res-name=btn_thesaurus, desc=Thesaurus, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=184.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689639, res-name=btn_dictionary, desc=Dictionary, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=228.0, y=2.0}
+|
++----------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=288, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=214.0, child-count=5}
+|
++-----------&gt;AppCompatCheckBox{id=2131689636, res-name=btn_star_result, visibility=VISIBLE, width=36, height=24, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=8.0, y=12.0, text=, input-type=0, ime-target=false, has-links=false, is-checked=false}
+|
++-----------&gt;AppCompatTextView{id=2131689635, res-name=text1, visibility=VISIBLE, width=96, height=48, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=44.0, y=0.0, text=rowdy, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatImageView{id=2131689637, res-name=btn_rhymer, desc=Rhymer, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=140.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689638, res-name=btn_thesaurus, desc=Thesaurus, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=184.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689639, res-name=btn_dictionary, desc=Dictionary, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=228.0, y=2.0}
+|
++----------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=288, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=262.0, child-count=5}
+|
++-----------&gt;AppCompatCheckBox{id=2131689636, res-name=btn_star_result, visibility=VISIBLE, width=36, height=24, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=8.0, y=12.0, text=, input-type=0, ime-target=false, has-links=false, is-checked=false}
+|
++-----------&gt;AppCompatTextView{id=2131689635, res-name=text1, visibility=VISIBLE, width=96, height=48, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=44.0, y=0.0, text=saudi, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatImageView{id=2131689637, res-name=btn_rhymer, desc=Rhymer, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=140.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689638, res-name=btn_thesaurus, desc=Thesaurus, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=184.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689639, res-name=btn_dictionary, desc=Dictionary, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=228.0, y=2.0}
+|
++----------&gt;AppCompatTextView{id=2131689635, res-name=text1, visibility=VISIBLE, width=288, height=22, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=310.0, text=Last syllable:, input-type=0, ime-target=false, has-links=false}
+|
++----------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=288, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=332.0, child-count=5}
+|
++-----------&gt;AppCompatCheckBox{id=2131689636, res-name=btn_star_result, visibility=VISIBLE, width=36, height=24, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=8.0, y=12.0, text=, input-type=0, ime-target=false, has-links=false, is-checked=false}
+|
++-----------&gt;AppCompatTextView{id=2131689635, res-name=text1, visibility=VISIBLE, width=96, height=48, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=44.0, y=0.0, text=abalone, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatImageView{id=2131689637, res-name=btn_rhymer, desc=Rhymer, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=140.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689638, res-name=btn_thesaurus, desc=Thesaurus, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=184.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689639, res-name=btn_dictionary, desc=Dictionary, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=228.0, y=2.0}
+|
++-------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=320, height=439, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=320.0, y=17.0, child-count=3}
+|
++--------&gt;FrameLayout{id=2131689628, res-name=result_list_header, visibility=VISIBLE, width=320, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
+|
++---------&gt;LinearLayout{id=2131689670, res-name=list_header, visibility=VISIBLE, width=320, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+|
++----------&gt;RelativeLayout{id=-1, visibility=VISIBLE, width=288, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=0.0, child-count=7}
+|
++-----------&gt;AppCompatTextView{id=2131689671, res-name=tv_list_header, visibility=VISIBLE, width=64, height=30, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=9.0, text=cloudy, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatCheckBox{id=2131689672, res-name=btn_star_query, visibility=VISIBLE, width=40, height=35, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=72.0, y=6.0, text=, input-type=0, ime-target=false, has-links=false, is-checked=false}
+|
++-----------&gt;AppCompatImageButton{id=2131689673, res-name=btn_help, desc=Help, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+|
++-----------&gt;AppCompatImageButton{id=2131689674, res-name=btn_delete, desc=Clear all favorite words?, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+|
++-----------&gt;AppCompatImageButton{id=2131689675, res-name=btn_filter, desc=Filter results, visibility=VISIBLE, width=40, height=40, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=152.0, y=4.0}
+|
++-----------&gt;AppCompatImageButton{id=2131689626, res-name=btn_play, desc=Play, visibility=VISIBLE, width=48, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=240.0, y=0.0}
+|
++-----------&gt;AppCompatImageButton{id=2131689676, res-name=btn_web_search, desc=Search, visibility=VISIBLE, width=48, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=192.0, y=0.0}
+|
++----------&gt;LinearLayout{id=2131689677, res-name=filter, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3}
+|
++-----------&gt;AppCompatTextView{id=2131689678, res-name=tv_filter_label, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=Rhymes of: , input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatTextView{id=2131689679, res-name=tv_filter, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatImageView{id=2131689680, res-name=btn_clear, desc=Clear filter, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+|
++--------&gt;View{id=2131689629, res-name=divider, visibility=VISIBLE, width=320, height=1, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=48.0}
+|
++--------&gt;FrameLayout{id=-1, visibility=VISIBLE, width=320, height=374, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=49.0, child-count=2}
+|
++---------&gt;AppCompatTextView{id=2131689630, res-name=empty, visibility=GONE, width=252, height=30, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=34.0, y=39.0, text=Sorry, no synonyms for “cloudy”, input-type=0, ime-target=false, has-links=false}
+|
++---------&gt;RecyclerView{id=2131689631, res-name=recycler_view, visibility=VISIBLE, width=288, height=370, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=4.0, child-count=10}
+|
++----------&gt;AppCompatTextView{id=2131689635, res-name=text1, visibility=VISIBLE, width=288, height=28, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=adj, input-type=0, ime-target=false, has-links=false}
+|
++----------&gt;AppCompatTextView{id=2131689635, res-name=text1, visibility=VISIBLE, width=288, height=22, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=28.0, text=Synonyms:, input-type=0, ime-target=false, has-links=false}
+|
++----------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=288, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=50.0, child-count=5}
+|
++-----------&gt;AppCompatCheckBox{id=2131689636, res-name=btn_star_result, visibility=VISIBLE, width=36, height=24, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=8.0, y=12.0, text=, input-type=0, ime-target=false, has-links=false, is-checked=false}
+|
++-----------&gt;AppCompatTextView{id=2131689635, res-name=text1, visibility=VISIBLE, width=96, height=48, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=44.0, y=0.0, text=nebulose, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatImageView{id=2131689637, res-name=btn_rhymer, desc=Rhymer, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=140.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689638, res-name=btn_thesaurus, desc=Thesaurus, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=184.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689639, res-name=btn_dictionary, desc=Dictionary, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=228.0, y=2.0}
+|
++----------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=288, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=98.0, child-count=5}
+|
++-----------&gt;AppCompatCheckBox{id=2131689636, res-name=btn_star_result, visibility=VISIBLE, width=36, height=24, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=8.0, y=12.0, text=, input-type=0, ime-target=false, has-links=false, is-checked=true}
+|
++-----------&gt;AppCompatTextView{id=2131689635, res-name=text1, visibility=VISIBLE, width=96, height=48, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=44.0, y=0.0, text=nebulous, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatImageView{id=2131689637, res-name=btn_rhymer, desc=Rhymer, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=140.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689638, res-name=btn_thesaurus, desc=Thesaurus, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=184.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689639, res-name=btn_dictionary, desc=Dictionary, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=228.0, y=2.0}
+|
++----------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=288, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=146.0, child-count=5}
+|
++-----------&gt;AppCompatCheckBox{id=2131689636, res-name=btn_star_result, visibility=VISIBLE, width=36, height=24, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=8.0, y=12.0, text=, input-type=0, ime-target=false, has-links=false, is-checked=false}
+|
++-----------&gt;AppCompatTextView{id=2131689635, res-name=text1, visibility=VISIBLE, width=96, height=48, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=44.0, y=0.0, text=indistinct, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatImageView{id=2131689637, res-name=btn_rhymer, desc=Rhymer, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=140.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689638, res-name=btn_thesaurus, desc=Thesaurus, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=184.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689639, res-name=btn_dictionary, desc=Dictionary, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=228.0, y=2.0}
+|
++----------&gt;AppCompatTextView{id=2131689635, res-name=text1, visibility=VISIBLE, width=288, height=28, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=194.0, text=adj, input-type=0, ime-target=false, has-links=false}
+|
++----------&gt;AppCompatTextView{id=2131689635, res-name=text1, visibility=VISIBLE, width=288, height=22, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=222.0, text=Synonyms:, input-type=0, ime-target=false, has-links=false}
+|
++----------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=288, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=244.0, child-count=5}
+|
++-----------&gt;AppCompatCheckBox{id=2131689636, res-name=btn_star_result, visibility=VISIBLE, width=36, height=24, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=8.0, y=12.0, text=, input-type=0, ime-target=false, has-links=false, is-checked=false}
+|
++-----------&gt;AppCompatTextView{id=2131689635, res-name=text1, visibility=VISIBLE, width=96, height=48, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=44.0, y=0.0, text=mirky, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatImageView{id=2131689637, res-name=btn_rhymer, desc=Rhymer, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=140.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689638, res-name=btn_thesaurus, desc=Thesaurus, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=184.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689639, res-name=btn_dictionary, desc=Dictionary, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=228.0, y=2.0}
+|
++----------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=288, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=292.0, child-count=5}
+|
++-----------&gt;AppCompatCheckBox{id=2131689636, res-name=btn_star_result, visibility=VISIBLE, width=36, height=24, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=8.0, y=12.0, text=, input-type=0, ime-target=false, has-links=false, is-checked=false}
+|
++-----------&gt;AppCompatTextView{id=2131689635, res-name=text1, visibility=VISIBLE, width=96, height=48, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=44.0, y=0.0, text=murky, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatImageView{id=2131689637, res-name=btn_rhymer, desc=Rhymer, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=140.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689638, res-name=btn_thesaurus, desc=Thesaurus, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=184.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689639, res-name=btn_dictionary, desc=Dictionary, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=228.0, y=2.0}
+|
++----------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=288, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=340.0, child-count=5}
+|
++-----------&gt;AppCompatCheckBox{id=2131689636, res-name=btn_star_result, visibility=VISIBLE, width=36, height=24, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=8.0, y=12.0, text=, input-type=0, ime-target=false, has-links=false, is-checked=false}
+|
++-----------&gt;AppCompatTextView{id=2131689635, res-name=text1, visibility=VISIBLE, width=96, height=48, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=44.0, y=0.0, text=turbid, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatImageView{id=2131689637, res-name=btn_rhymer, desc=Rhymer, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=140.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689638, res-name=btn_thesaurus, desc=Thesaurus, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=184.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689639, res-name=btn_dictionary, desc=Dictionary, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=228.0, y=2.0}
+|
++-------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=320, height=439, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=640.0, y=17.0, child-count=3}
+|
++--------&gt;FrameLayout{id=2131689628, res-name=result_list_header, visibility=VISIBLE, width=320, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
+|
++---------&gt;LinearLayout{id=2131689670, res-name=list_header, visibility=VISIBLE, width=320, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+|
++----------&gt;RelativeLayout{id=-1, visibility=VISIBLE, width=288, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=0.0, child-count=7}
+|
++-----------&gt;AppCompatTextView{id=2131689671, res-name=tv_list_header, visibility=VISIBLE, width=89, height=30, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=9.0, text=nebulous, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatCheckBox{id=2131689672, res-name=btn_star_query, visibility=VISIBLE, width=40, height=35, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=97.0, y=6.0, text=, input-type=0, ime-target=false, has-links=false, is-checked=true}
+|
++-----------&gt;AppCompatImageButton{id=2131689673, res-name=btn_help, desc=Help, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+|
++-----------&gt;AppCompatImageButton{id=2131689674, res-name=btn_delete, desc=Clear all favorite words?, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+|
++-----------&gt;AppCompatImageButton{id=2131689675, res-name=btn_filter, desc=Filter results, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+|
++-----------&gt;AppCompatImageButton{id=2131689626, res-name=btn_play, desc=Play, visibility=VISIBLE, width=48, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=240.0, y=0.0}
+|
++-----------&gt;AppCompatImageButton{id=2131689676, res-name=btn_web_search, desc=Search, visibility=VISIBLE, width=48, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=192.0, y=0.0}
+|
++----------&gt;LinearLayout{id=2131689677, res-name=filter, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3}
+|
++-----------&gt;AppCompatTextView{id=2131689678, res-name=tv_filter_label, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=Rhymes of: , input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatTextView{id=2131689679, res-name=tv_filter, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatImageView{id=2131689680, res-name=btn_clear, desc=Clear filter, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+|
++--------&gt;View{id=2131689629, res-name=divider, visibility=VISIBLE, width=320, height=1, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=48.0}
+|
++--------&gt;FrameLayout{id=-1, visibility=VISIBLE, width=320, height=374, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=49.0, child-count=2}
+|
++---------&gt;AppCompatTextView{id=2131689630, res-name=empty, visibility=GONE, width=252, height=30, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=34.0, y=39.0, text=Sorry, no definitions for “nebulous”, input-type=0, ime-target=false, has-links=false}
+|
++---------&gt;RecyclerView{id=2131689631, res-name=recycler_view, visibility=VISIBLE, width=288, height=104, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=4.0, child-count=3}
+|
++----------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=288, height=22, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+|
++-----------&gt;AppCompatTextView{id=2131689633, res-name=word_type, visibility=VISIBLE, width=24, height=22, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=a, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;CABTextView{id=2131689634, res-name=definition, visibility=VISIBLE, width=224, height=22, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=24.0, y=0.0, text=lacking definite form or limits, input-type=0, ime-target=false, has-links=false}
+|
++----------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=288, height=41, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=22.0, child-count=2}
+|
++-----------&gt;AppCompatTextView{id=2131689633, res-name=word_type, visibility=VISIBLE, width=24, height=22, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=a, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;CABTextView{id=2131689634, res-name=definition, visibility=VISIBLE, width=264, height=41, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=24.0, y=0.0, text=lacking definition or definite content, input-type=0, ime-target=false, has-links=false}
+|
++----------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=288, height=41, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=63.0, child-count=2}
+|
++-----------&gt;AppCompatTextView{id=2131689633, res-name=word_type, visibility=VISIBLE, width=24, height=22, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=a, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;CABTextView{id=2131689634, res-name=definition, visibility=VISIBLE, width=264, height=41, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=24.0, y=0.0, text=of or relating to or resembling a nebula, input-type=0, ime-target=false, has-links=false}
+|
++-------&gt;ScrollView{id=-1, visibility=VISIBLE, width=320, height=439, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=960.0, y=17.0, child-count=1}
+|
++--------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=288, height=107, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=16.0, child-count=2}
+|
++---------&gt;FloatingActionButton{id=2131689626, res-name=btn_play, desc=Play, visibility=VISIBLE, width=40, height=40, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=false, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=124.0, y=0.0}
+|
++---------&gt;CABEditText{id=2131689627, res-name=tv_text, visibility=VISIBLE, width=288, height=67, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=true, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x20001 imeOptions=0x40000006 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=Paste your poem here and press the play icon to listen to it. label=null packageName=null fieldId=0 fieldName=null extras=null hintLocales=null contentMimeTypes=null ], x=0.0, y=40.0, text=, hint=Paste your poem here and press the play icon to listen to it., input-type=131073, ime-target=true, has-links=false}
+|
++-------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=320, height=439, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=1280.0, y=17.0, child-count=3}
+|
++--------&gt;FrameLayout{id=2131689628, res-name=result_list_header, visibility=VISIBLE, width=320, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
+|
++---------&gt;LinearLayout{id=2131689670, res-name=list_header, visibility=VISIBLE, width=320, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+|
++----------&gt;RelativeLayout{id=-1, visibility=VISIBLE, width=288, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=0.0, child-count=7}
+|
++-----------&gt;AppCompatTextView{id=2131689671, res-name=tv_list_header, visibility=VISIBLE, width=90, height=30, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=9.0, text=Favorites, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatCheckBox{id=2131689672, res-name=btn_star_query, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false, is-checked=false}
+|
++-----------&gt;AppCompatImageButton{id=2131689673, res-name=btn_help, desc=Help, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+|
++-----------&gt;AppCompatImageButton{id=2131689674, res-name=btn_delete, desc=Clear all favorite words?, visibility=VISIBLE, width=48, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=240.0, y=0.0}
+|
++-----------&gt;AppCompatImageButton{id=2131689675, res-name=btn_filter, desc=Filter results, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+|
++-----------&gt;AppCompatImageButton{id=2131689626, res-name=btn_play, desc=Play, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+|
++-----------&gt;AppCompatImageButton{id=2131689676, res-name=btn_web_search, desc=Search, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+|
++----------&gt;LinearLayout{id=2131689677, res-name=filter, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3}
+|
++-----------&gt;AppCompatTextView{id=2131689678, res-name=tv_filter_label, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=Rhymes of: , input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatTextView{id=2131689679, res-name=tv_filter, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatImageView{id=2131689680, res-name=btn_clear, desc=Clear filter, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+|
++--------&gt;View{id=2131689629, res-name=divider, visibility=VISIBLE, width=320, height=1, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=48.0}
+|
++--------&gt;FrameLayout{id=-1, visibility=VISIBLE, width=320, height=374, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=49.0, child-count=2}
+|
++---------&gt;AppCompatTextView{id=2131689630, res-name=empty, visibility=GONE, width=288, height=52, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=131.0, text=You haven't starred any words yet., input-type=0, ime-target=false, has-links=false}
+|
++---------&gt;RecyclerView{id=2131689631, res-name=recycler_view, visibility=VISIBLE, width=288, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=4.0, child-count=1}
+|
++----------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=288, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=5}
+|
++-----------&gt;AppCompatCheckBox{id=2131689636, res-name=btn_star_result, visibility=VISIBLE, width=36, height=24, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=8.0, y=12.0, text=, input-type=0, ime-target=false, has-links=false, is-checked=true}
+|
++-----------&gt;AppCompatTextView{id=2131689635, res-name=text1, visibility=VISIBLE, width=96, height=48, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=44.0, y=0.0, text=nebulous, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatImageView{id=2131689637, res-name=btn_rhymer, desc=Rhymer, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=140.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689638, res-name=btn_thesaurus, desc=Thesaurus, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=184.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689639, res-name=btn_dictionary, desc=Dictionary, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=228.0, y=2.0}
+|
++----&gt;ViewStubCompat{id=2131689572, res-name=action_mode_bar_stub, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+|
++-&gt;View{id=16908335, res-name=statusBarBackground, visibility=VISIBLE, width=320, height=24, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+|
+at dalvik.system.VMStack.getThreadStackTrace(Native Method)
+at java.lang.Thread.getStackTrace(Thread.java:1566)
+at android.support.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:92)
+at android.support.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:56)
+at android.support.test.espresso.ViewInteraction.runSynchronouslyOnUiThread(ViewInteraction.java:184)
+at android.support.test.espresso.ViewInteraction.check(ViewInteraction.java:158)
+at ca.rmen.android.poetassistant.main.TestUiUtils.checkTitleStripCenterTitle(TestUiUtils.java:91)
+at ca.rmen.android.poetassistant.main.TestUiUtils.checkTitleStripOrTab(TestUiUtils.java:80)
+at ca.rmen.android.poetassistant.main.CustomChecks.checkAllStarredWords(CustomChecks.java:116)
+at ca.rmen.android.poetassistant.main.IntegrationTest.runIntegrationTest(IntegrationTest.java:130)
+at ca.rmen.android.poetassistant.main.IntegrationTest.integrationTest1(IntegrationTest.java:182)
+at java.lang.reflect.Method.invoke(Native Method)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+at android.support.test.internal.statement.UiThreadStatement.evaluate(UiThreadStatement.java:55)
+at android.support.test.rule.ActivityTestRule$ActivityStatement.evaluate(ActivityTestRule.java:270)
+at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runners.Suite.runChild(Suite.java:128)
+at org.junit.runners.Suite.runChild(Suite.java:27)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1932)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="integrationTest2"></a>
+<h3 class="failures">integrationTest2</h3>
+<span class="code">
+<pre>android.support.test.espresso.NoMatchingViewException: No views in hierarchy found matching: (with text: equalToIgnoringCase(&quot;Favorites&quot;) and Child at position 1 in parent (with id: ca.rmen.android.poetassistant:id/pager_title_strip and has parent matching: with id: ca.rmen.android.poetassistant:id/view_pager) and at least 100 percent of the view's area is displayed to the user.)
+
+View Hierarchy:
++&gt;DecorView{id=-1, visibility=VISIBLE, width=320, height=480, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+|
++-&gt;LinearLayout{id=-1, visibility=VISIBLE, width=320, height=480, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+|
++--&gt;ViewStub{id=16909295, res-name=action_mode_bar_stub, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+|
++--&gt;FrameLayout{id=-1, visibility=VISIBLE, width=320, height=456, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=24.0, child-count=1}
+|
++---&gt;FitWindowsFrameLayout{id=2131689571, res-name=action_bar_root, visibility=VISIBLE, width=320, height=456, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+|
++----&gt;ContentFrameLayout{id=16908290, res-name=content, visibility=VISIBLE, width=320, height=456, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
+|
++-----&gt;CoordinatorLayout{id=-1, visibility=VISIBLE, width=320, height=456, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+|
++------&gt;AppBarLayout{id=2131689608, res-name=app_bar_layout, visibility=VISIBLE, width=320, height=104, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+|
++-------&gt;Toolbar{id=2131689609, res-name=toolbar, visibility=VISIBLE, width=320, height=56, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+|
++--------&gt;ActionMenuView{id=-1, visibility=VISIBLE, width=88, height=56, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=232.0, y=0.0, child-count=2}
+|
++---------&gt;ActionMenuItemView{id=2131689688, res-name=action_search, desc=Search, visibility=VISIBLE, width=48, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=4.0, text=, input-type=0, ime-target=false, has-links=false}
+|
++---------&gt;OverflowMenuButton{id=-1, desc=More options, visibility=VISIBLE, width=40, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=48.0, y=4.0}
+|
++--------&gt;AppCompatTextView{id=-1, visibility=VISIBLE, width=131, height=28, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=14.0, text=Poet Assistant, input-type=0, ime-target=false, has-links=false}
+|
++-------&gt;TabLayout{id=2131689610, res-name=tabs, visibility=VISIBLE, width=320, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=56.0, child-count=1}
+|
++--------&gt;SlidingTabStrip{id=-1, visibility=VISIBLE, width=320, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=5}
+|
++---------&gt;TabView{id=-1, visibility=VISIBLE, width=64, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+|
++----------&gt;AppCompatImageView{id=-1, visibility=VISIBLE, width=24, height=24, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=20.0, y=12.0}
+|
++----------&gt;AppCompatTextView{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+|
++---------&gt;TabView{id=-1, visibility=VISIBLE, width=64, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=64.0, y=0.0, child-count=2}
+|
++----------&gt;AppCompatImageView{id=-1, visibility=VISIBLE, width=24, height=24, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=20.0, y=12.0}
+|
++----------&gt;AppCompatTextView{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+|
++---------&gt;TabView{id=-1, visibility=VISIBLE, width=64, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=128.0, y=0.0, child-count=2}
+|
++----------&gt;AppCompatImageView{id=-1, visibility=VISIBLE, width=24, height=24, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=20.0, y=12.0}
+|
++----------&gt;AppCompatTextView{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+|
++---------&gt;TabView{id=-1, visibility=VISIBLE, width=64, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=true, root-is-layout-requested=false, has-input-connection=false, x=192.0, y=0.0, child-count=2}
+|
++----------&gt;AppCompatImageView{id=-1, visibility=VISIBLE, width=24, height=24, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=true, root-is-layout-requested=false, has-input-connection=false, x=20.0, y=12.0}
+|
++----------&gt;AppCompatTextView{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=true, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+|
++---------&gt;TabView{id=-1, visibility=VISIBLE, width=64, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=256.0, y=0.0, child-count=2}
+|
++----------&gt;AppCompatImageView{id=-1, visibility=VISIBLE, width=24, height=24, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=20.0, y=12.0}
+|
++----------&gt;AppCompatTextView{id=-1, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+|
++------&gt;ViewPager{id=2131689611, res-name=view_pager, visibility=VISIBLE, width=320, height=456, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=104.0, child-count=6}
+|
++-------&gt;PagerTitleStrip{id=2131689612, res-name=pager_title_strip, visibility=VISIBLE, width=320, height=17, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=960.0, y=0.0, child-count=3}
+|
++--------&gt;TextView{id=-1, visibility=VISIBLE, width=68, height=17, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=DICTIONARY, input-type=0, ime-target=false, has-links=false}
+|
++--------&gt;TextView{id=-1, visibility=VISIBLE, width=44, height=17, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=138.0, y=0.0, text=READER, input-type=0, ime-target=false, has-links=false}
+|
++--------&gt;TextView{id=-1, visibility=VISIBLE, width=61, height=17, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=259.0, y=0.0, text=FAVORITES, input-type=0, ime-target=false, has-links=false}
+|
++-------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=320, height=439, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=17.0, child-count=3}
+|
++--------&gt;FrameLayout{id=2131689628, res-name=result_list_header, visibility=VISIBLE, width=320, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
+|
++---------&gt;LinearLayout{id=2131689670, res-name=list_header, visibility=VISIBLE, width=320, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+|
++----------&gt;RelativeLayout{id=-1, visibility=VISIBLE, width=288, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=0.0, child-count=7}
+|
++-----------&gt;AppCompatTextView{id=2131689671, res-name=tv_list_header, visibility=VISIBLE, width=90, height=30, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=9.0, text=beholden, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatCheckBox{id=2131689672, res-name=btn_star_query, visibility=VISIBLE, width=40, height=35, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=98.0, y=6.0, text=, input-type=0, ime-target=false, has-links=false, is-checked=false}
+|
++-----------&gt;AppCompatImageButton{id=2131689673, res-name=btn_help, desc=Help, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+|
++-----------&gt;AppCompatImageButton{id=2131689674, res-name=btn_delete, desc=Clear all favorite words?, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+|
++-----------&gt;AppCompatImageButton{id=2131689675, res-name=btn_filter, desc=Filter results, visibility=VISIBLE, width=40, height=40, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=152.0, y=4.0}
+|
++-----------&gt;AppCompatImageButton{id=2131689626, res-name=btn_play, desc=Play, visibility=VISIBLE, width=48, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=240.0, y=0.0}
+|
++-----------&gt;AppCompatImageButton{id=2131689676, res-name=btn_web_search, desc=Search, visibility=VISIBLE, width=48, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=192.0, y=0.0}
+|
++----------&gt;LinearLayout{id=2131689677, res-name=filter, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3}
+|
++-----------&gt;AppCompatTextView{id=2131689678, res-name=tv_filter_label, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=Synonyms of: , input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatTextView{id=2131689679, res-name=tv_filter, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatImageView{id=2131689680, res-name=btn_clear, desc=Clear filter, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+|
++--------&gt;View{id=2131689629, res-name=divider, visibility=VISIBLE, width=320, height=1, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=48.0}
+|
++--------&gt;FrameLayout{id=-1, visibility=VISIBLE, width=320, height=374, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=49.0, child-count=2}
+|
++---------&gt;AppCompatTextView{id=2131689630, res-name=empty, visibility=GONE, width=252, height=30, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=34.0, y=39.0, text=Sorry, no rhymes for “beholden”, input-type=0, ime-target=false, has-links=false}
+|
++---------&gt;RecyclerView{id=2131689631, res-name=recycler_view, visibility=VISIBLE, width=288, height=370, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=4.0, child-count=9}
+|
++----------&gt;AppCompatTextView{id=2131689635, res-name=text1, visibility=VISIBLE, width=288, height=22, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=Strict rhyme matches:, input-type=0, ime-target=false, has-links=false}
+|
++----------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=288, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=22.0, child-count=5}
+|
++-----------&gt;AppCompatCheckBox{id=2131689636, res-name=btn_star_result, visibility=VISIBLE, width=36, height=24, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=8.0, y=12.0, text=, input-type=0, ime-target=false, has-links=false, is-checked=false}
+|
++-----------&gt;AppCompatTextView{id=2131689635, res-name=text1, visibility=VISIBLE, width=96, height=48, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=44.0, y=0.0, text=embolden, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatImageView{id=2131689637, res-name=btn_rhymer, desc=Rhymer, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=140.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689638, res-name=btn_thesaurus, desc=Thesaurus, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=184.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689639, res-name=btn_dictionary, desc=Dictionary, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=228.0, y=2.0}
+|
++----------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=288, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=70.0, child-count=5}
+|
++-----------&gt;AppCompatCheckBox{id=2131689636, res-name=btn_star_result, visibility=VISIBLE, width=36, height=24, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=8.0, y=12.0, text=, input-type=0, ime-target=false, has-links=false, is-checked=false}
+|
++-----------&gt;AppCompatTextView{id=2131689635, res-name=text1, visibility=VISIBLE, width=96, height=48, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=44.0, y=0.0, text=golden, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatImageView{id=2131689637, res-name=btn_rhymer, desc=Rhymer, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=140.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689638, res-name=btn_thesaurus, desc=Thesaurus, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=184.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689639, res-name=btn_dictionary, desc=Dictionary, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=228.0, y=2.0}
+|
++----------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=288, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=118.0, child-count=5}
+|
++-----------&gt;AppCompatCheckBox{id=2131689636, res-name=btn_star_result, visibility=VISIBLE, width=36, height=24, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=8.0, y=12.0, text=, input-type=0, ime-target=false, has-links=false, is-checked=false}
+|
++-----------&gt;AppCompatTextView{id=2131689635, res-name=text1, visibility=VISIBLE, width=96, height=48, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=44.0, y=0.0, text=olden, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatImageView{id=2131689637, res-name=btn_rhymer, desc=Rhymer, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=140.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689638, res-name=btn_thesaurus, desc=Thesaurus, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=184.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689639, res-name=btn_dictionary, desc=Dictionary, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=228.0, y=2.0}
+|
++----------&gt;AppCompatTextView{id=2131689635, res-name=text1, visibility=VISIBLE, width=288, height=22, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=166.0, text=Last syllable:, input-type=0, ime-target=false, has-links=false}
+|
++----------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=288, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=188.0, child-count=5}
+|
++-----------&gt;AppCompatCheckBox{id=2131689636, res-name=btn_star_result, visibility=VISIBLE, width=36, height=24, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=8.0, y=12.0, text=, input-type=0, ime-target=false, has-links=false, is-checked=false}
+|
++-----------&gt;AppCompatTextView{id=2131689635, res-name=text1, visibility=VISIBLE, width=96, height=48, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=44.0, y=0.0, text=aachen, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatImageView{id=2131689637, res-name=btn_rhymer, desc=Rhymer, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=140.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689638, res-name=btn_thesaurus, desc=Thesaurus, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=184.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689639, res-name=btn_dictionary, desc=Dictionary, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=228.0, y=2.0}
+|
++----------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=288, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=236.0, child-count=5}
+|
++-----------&gt;AppCompatCheckBox{id=2131689636, res-name=btn_star_result, visibility=VISIBLE, width=36, height=24, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=8.0, y=12.0, text=, input-type=0, ime-target=false, has-links=false, is-checked=false}
+|
++-----------&gt;AppCompatTextView{id=2131689635, res-name=text1, visibility=VISIBLE, width=96, height=48, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=44.0, y=0.0, text=aaron, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatImageView{id=2131689637, res-name=btn_rhymer, desc=Rhymer, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=140.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689638, res-name=btn_thesaurus, desc=Thesaurus, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=184.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689639, res-name=btn_dictionary, desc=Dictionary, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=228.0, y=2.0}
+|
++----------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=288, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=284.0, child-count=5}
+|
++-----------&gt;AppCompatCheckBox{id=2131689636, res-name=btn_star_result, visibility=VISIBLE, width=36, height=24, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=8.0, y=12.0, text=, input-type=0, ime-target=false, has-links=false, is-checked=false}
+|
++-----------&gt;AppCompatTextView{id=2131689635, res-name=text1, visibility=VISIBLE, width=96, height=48, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=44.0, y=0.0, text=abandon, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatImageView{id=2131689637, res-name=btn_rhymer, desc=Rhymer, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=140.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689638, res-name=btn_thesaurus, desc=Thesaurus, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=184.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689639, res-name=btn_dictionary, desc=Dictionary, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=228.0, y=2.0}
+|
++----------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=288, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=332.0, child-count=5}
+|
++-----------&gt;AppCompatCheckBox{id=2131689636, res-name=btn_star_result, visibility=VISIBLE, width=36, height=24, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=8.0, y=12.0, text=, input-type=0, ime-target=false, has-links=false, is-checked=false}
+|
++-----------&gt;AppCompatTextView{id=2131689635, res-name=text1, visibility=VISIBLE, width=96, height=48, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=44.0, y=0.0, text=abbreviation, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatImageView{id=2131689637, res-name=btn_rhymer, desc=Rhymer, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=140.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689638, res-name=btn_thesaurus, desc=Thesaurus, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=184.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689639, res-name=btn_dictionary, desc=Dictionary, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=228.0, y=2.0}
+|
++-------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=320, height=439, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=320.0, y=17.0, child-count=3}
+|
++--------&gt;FrameLayout{id=2131689628, res-name=result_list_header, visibility=VISIBLE, width=320, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
+|
++---------&gt;LinearLayout{id=2131689670, res-name=list_header, visibility=VISIBLE, width=320, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+|
++----------&gt;RelativeLayout{id=-1, visibility=VISIBLE, width=288, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=0.0, child-count=7}
+|
++-----------&gt;AppCompatTextView{id=2131689671, res-name=tv_list_header, visibility=VISIBLE, width=97, height=30, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=9.0, text=embolden, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatCheckBox{id=2131689672, res-name=btn_star_query, visibility=VISIBLE, width=40, height=35, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=105.0, y=6.0, text=, input-type=0, ime-target=false, has-links=false, is-checked=false}
+|
++-----------&gt;AppCompatImageButton{id=2131689673, res-name=btn_help, desc=Help, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+|
++-----------&gt;AppCompatImageButton{id=2131689674, res-name=btn_delete, desc=Clear all favorite words?, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+|
++-----------&gt;AppCompatImageButton{id=2131689675, res-name=btn_filter, desc=Filter results, visibility=VISIBLE, width=40, height=40, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=152.0, y=4.0}
+|
++-----------&gt;AppCompatImageButton{id=2131689626, res-name=btn_play, desc=Play, visibility=VISIBLE, width=48, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=240.0, y=0.0}
+|
++-----------&gt;AppCompatImageButton{id=2131689676, res-name=btn_web_search, desc=Search, visibility=VISIBLE, width=48, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=192.0, y=0.0}
+|
++----------&gt;LinearLayout{id=2131689677, res-name=filter, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3}
+|
++-----------&gt;AppCompatTextView{id=2131689678, res-name=tv_filter_label, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=Rhymes of: , input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatTextView{id=2131689679, res-name=tv_filter, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatImageView{id=2131689680, res-name=btn_clear, desc=Clear filter, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+|
++--------&gt;View{id=2131689629, res-name=divider, visibility=VISIBLE, width=320, height=1, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=48.0}
+|
++--------&gt;FrameLayout{id=-1, visibility=VISIBLE, width=320, height=374, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=49.0, child-count=2}
+|
++---------&gt;AppCompatTextView{id=2131689630, res-name=empty, visibility=GONE, width=252, height=30, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=34.0, y=39.0, text=Sorry, no synonyms for “embolden”, input-type=0, ime-target=false, has-links=false}
+|
++---------&gt;RecyclerView{id=2131689631, res-name=recycler_view, visibility=VISIBLE, width=288, height=312, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=4.0, child-count=8}
+|
++----------&gt;AppCompatTextView{id=2131689635, res-name=text1, visibility=VISIBLE, width=288, height=28, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=verb, input-type=0, ime-target=false, has-links=false}
+|
++----------&gt;AppCompatTextView{id=2131689635, res-name=text1, visibility=VISIBLE, width=288, height=22, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=28.0, text=Synonyms:, input-type=0, ime-target=false, has-links=false}
+|
++----------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=288, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=50.0, child-count=5}
+|
++-----------&gt;AppCompatCheckBox{id=2131689636, res-name=btn_star_result, visibility=VISIBLE, width=36, height=24, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=8.0, y=12.0, text=, input-type=0, ime-target=false, has-links=false, is-checked=false}
+|
++-----------&gt;AppCompatTextView{id=2131689635, res-name=text1, visibility=VISIBLE, width=96, height=48, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=44.0, y=0.0, text=hearten, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatImageView{id=2131689637, res-name=btn_rhymer, desc=Rhymer, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=140.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689638, res-name=btn_thesaurus, desc=Thesaurus, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=184.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689639, res-name=btn_dictionary, desc=Dictionary, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=228.0, y=2.0}
+|
++----------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=288, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=98.0, child-count=5}
+|
++-----------&gt;AppCompatCheckBox{id=2131689636, res-name=btn_star_result, visibility=VISIBLE, width=36, height=24, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=8.0, y=12.0, text=, input-type=0, ime-target=false, has-links=false, is-checked=true}
+|
++-----------&gt;AppCompatTextView{id=2131689635, res-name=text1, visibility=VISIBLE, width=96, height=48, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=44.0, y=0.0, text=recreate, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatImageView{id=2131689637, res-name=btn_rhymer, desc=Rhymer, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=140.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689638, res-name=btn_thesaurus, desc=Thesaurus, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=184.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689639, res-name=btn_dictionary, desc=Dictionary, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=228.0, y=2.0}
+|
++----------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=288, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=146.0, child-count=5}
+|
++-----------&gt;AppCompatCheckBox{id=2131689636, res-name=btn_star_result, visibility=VISIBLE, width=36, height=24, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=8.0, y=12.0, text=, input-type=0, ime-target=false, has-links=false, is-checked=false}
+|
++-----------&gt;AppCompatTextView{id=2131689635, res-name=text1, visibility=VISIBLE, width=96, height=48, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=44.0, y=0.0, text=cheer, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatImageView{id=2131689637, res-name=btn_rhymer, desc=Rhymer, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=140.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689638, res-name=btn_thesaurus, desc=Thesaurus, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=184.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689639, res-name=btn_dictionary, desc=Dictionary, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=228.0, y=2.0}
+|
++----------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=288, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=194.0, child-count=5}
+|
++-----------&gt;AppCompatCheckBox{id=2131689636, res-name=btn_star_result, visibility=VISIBLE, width=36, height=24, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=8.0, y=12.0, text=, input-type=0, ime-target=false, has-links=false, is-checked=false}
+|
++-----------&gt;AppCompatTextView{id=2131689635, res-name=text1, visibility=VISIBLE, width=96, height=48, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=44.0, y=0.0, text=encourage, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatImageView{id=2131689637, res-name=btn_rhymer, desc=Rhymer, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=140.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689638, res-name=btn_thesaurus, desc=Thesaurus, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=184.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689639, res-name=btn_dictionary, desc=Dictionary, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=228.0, y=2.0}
+|
++----------&gt;AppCompatTextView{id=2131689635, res-name=text1, visibility=VISIBLE, width=288, height=22, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=242.0, text=Antonyms:, input-type=0, ime-target=false, has-links=false}
+|
++----------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=288, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=264.0, child-count=5}
+|
++-----------&gt;AppCompatCheckBox{id=2131689636, res-name=btn_star_result, visibility=VISIBLE, width=36, height=24, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=8.0, y=12.0, text=, input-type=0, ime-target=false, has-links=false, is-checked=false}
+|
++-----------&gt;AppCompatTextView{id=2131689635, res-name=text1, visibility=VISIBLE, width=96, height=48, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=44.0, y=0.0, text=dishearten, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatImageView{id=2131689637, res-name=btn_rhymer, desc=Rhymer, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=140.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689638, res-name=btn_thesaurus, desc=Thesaurus, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=184.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689639, res-name=btn_dictionary, desc=Dictionary, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=228.0, y=2.0}
+|
++-------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=320, height=439, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=640.0, y=17.0, child-count=3}
+|
++--------&gt;FrameLayout{id=2131689628, res-name=result_list_header, visibility=VISIBLE, width=320, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
+|
++---------&gt;LinearLayout{id=2131689670, res-name=list_header, visibility=VISIBLE, width=320, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+|
++----------&gt;RelativeLayout{id=-1, visibility=VISIBLE, width=288, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=0.0, child-count=7}
+|
++-----------&gt;AppCompatTextView{id=2131689671, res-name=tv_list_header, visibility=VISIBLE, width=82, height=30, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=9.0, text=recreate, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatCheckBox{id=2131689672, res-name=btn_star_query, visibility=VISIBLE, width=40, height=35, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=90.0, y=6.0, text=, input-type=0, ime-target=false, has-links=false, is-checked=true}
+|
++-----------&gt;AppCompatImageButton{id=2131689673, res-name=btn_help, desc=Help, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+|
++-----------&gt;AppCompatImageButton{id=2131689674, res-name=btn_delete, desc=Clear all favorite words?, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+|
++-----------&gt;AppCompatImageButton{id=2131689675, res-name=btn_filter, desc=Filter results, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+|
++-----------&gt;AppCompatImageButton{id=2131689626, res-name=btn_play, desc=Play, visibility=VISIBLE, width=48, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=240.0, y=0.0}
+|
++-----------&gt;AppCompatImageButton{id=2131689676, res-name=btn_web_search, desc=Search, visibility=VISIBLE, width=48, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=192.0, y=0.0}
+|
++----------&gt;LinearLayout{id=2131689677, res-name=filter, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3}
+|
++-----------&gt;AppCompatTextView{id=2131689678, res-name=tv_filter_label, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=Rhymes of: , input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatTextView{id=2131689679, res-name=tv_filter, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatImageView{id=2131689680, res-name=btn_clear, desc=Clear filter, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+|
++--------&gt;View{id=2131689629, res-name=divider, visibility=VISIBLE, width=320, height=1, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=48.0}
+|
++--------&gt;FrameLayout{id=-1, visibility=VISIBLE, width=320, height=374, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=49.0, child-count=2}
+|
++---------&gt;AppCompatTextView{id=2131689630, res-name=empty, visibility=GONE, width=252, height=30, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=34.0, y=39.0, text=Sorry, no definitions for “recreate”, input-type=0, ime-target=false, has-links=false}
+|
++---------&gt;RecyclerView{id=2131689631, res-name=recycler_view, visibility=VISIBLE, width=288, height=126, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=4.0, child-count=4}
+|
++----------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=288, height=22, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+|
++-----------&gt;AppCompatTextView{id=2131689633, res-name=word_type, visibility=VISIBLE, width=24, height=22, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=v, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;CABTextView{id=2131689634, res-name=definition, visibility=VISIBLE, width=104, height=22, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=24.0, y=0.0, text=create anew, input-type=0, ime-target=false, has-links=false}
+|
++----------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=288, height=60, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=22.0, child-count=2}
+|
++-----------&gt;AppCompatTextView{id=2131689633, res-name=word_type, visibility=VISIBLE, width=24, height=22, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=v, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;CABTextView{id=2131689634, res-name=definition, visibility=VISIBLE, width=264, height=60, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=24.0, y=0.0, text=engage in recreational activities rather than work; occupy oneself in a diversion, input-type=0, ime-target=false, has-links=false}
+|
++----------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=288, height=22, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=82.0, child-count=2}
+|
++-----------&gt;AppCompatTextView{id=2131689633, res-name=word_type, visibility=VISIBLE, width=24, height=22, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=v, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;CABTextView{id=2131689634, res-name=definition, visibility=VISIBLE, width=181, height=22, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=24.0, y=0.0, text=give encouragement to, input-type=0, ime-target=false, has-links=false}
+|
++----------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=288, height=22, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=104.0, child-count=2}
+|
++-----------&gt;AppCompatTextView{id=2131689633, res-name=word_type, visibility=VISIBLE, width=24, height=22, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=v, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;CABTextView{id=2131689634, res-name=definition, visibility=VISIBLE, width=196, height=22, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=24.0, y=0.0, text=give new life or energy to, input-type=0, ime-target=false, has-links=false}
+|
++-------&gt;ScrollView{id=-1, visibility=VISIBLE, width=320, height=439, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=960.0, y=17.0, child-count=1}
+|
++--------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=288, height=107, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=16.0, child-count=2}
+|
++---------&gt;FloatingActionButton{id=2131689626, res-name=btn_play, desc=Play, visibility=VISIBLE, width=40, height=40, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=false, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=124.0, y=0.0}
+|
++---------&gt;CABEditText{id=2131689627, res-name=tv_text, visibility=VISIBLE, width=288, height=67, has-focus=true, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=true, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x20001 imeOptions=0x40000006 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=Paste your poem here and press the play icon to listen to it. label=null packageName=null fieldId=0 fieldName=null extras=null hintLocales=null contentMimeTypes=null ], x=0.0, y=40.0, text=, hint=Paste your poem here and press the play icon to listen to it., input-type=131073, ime-target=true, has-links=false}
+|
++-------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=320, height=439, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=1280.0, y=17.0, child-count=3}
+|
++--------&gt;FrameLayout{id=2131689628, res-name=result_list_header, visibility=VISIBLE, width=320, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
+|
++---------&gt;LinearLayout{id=2131689670, res-name=list_header, visibility=VISIBLE, width=320, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+|
++----------&gt;RelativeLayout{id=-1, visibility=VISIBLE, width=288, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=0.0, child-count=7}
+|
++-----------&gt;AppCompatTextView{id=2131689671, res-name=tv_list_header, visibility=VISIBLE, width=90, height=30, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=9.0, text=Favorites, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatCheckBox{id=2131689672, res-name=btn_star_query, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false, is-checked=false}
+|
++-----------&gt;AppCompatImageButton{id=2131689673, res-name=btn_help, desc=Help, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+|
++-----------&gt;AppCompatImageButton{id=2131689674, res-name=btn_delete, desc=Clear all favorite words?, visibility=VISIBLE, width=48, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=240.0, y=0.0}
+|
++-----------&gt;AppCompatImageButton{id=2131689675, res-name=btn_filter, desc=Filter results, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+|
++-----------&gt;AppCompatImageButton{id=2131689626, res-name=btn_play, desc=Play, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+|
++-----------&gt;AppCompatImageButton{id=2131689676, res-name=btn_web_search, desc=Search, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+|
++----------&gt;LinearLayout{id=2131689677, res-name=filter, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3}
+|
++-----------&gt;AppCompatTextView{id=2131689678, res-name=tv_filter_label, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=Rhymes of: , input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatTextView{id=2131689679, res-name=tv_filter, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, text=, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatImageView{id=2131689680, res-name=btn_clear, desc=Clear filter, visibility=VISIBLE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+|
++--------&gt;View{id=2131689629, res-name=divider, visibility=VISIBLE, width=320, height=1, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=48.0}
+|
++--------&gt;FrameLayout{id=-1, visibility=VISIBLE, width=320, height=374, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=49.0, child-count=2}
+|
++---------&gt;AppCompatTextView{id=2131689630, res-name=empty, visibility=GONE, width=288, height=52, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=131.0, text=You haven't starred any words yet., input-type=0, ime-target=false, has-links=false}
+|
++---------&gt;RecyclerView{id=2131689631, res-name=recycler_view, visibility=VISIBLE, width=288, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=16.0, y=4.0, child-count=1}
+|
++----------&gt;LinearLayout{id=-1, visibility=VISIBLE, width=288, height=48, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=5}
+|
++-----------&gt;AppCompatCheckBox{id=2131689636, res-name=btn_star_result, visibility=VISIBLE, width=36, height=24, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=8.0, y=12.0, text=, input-type=0, ime-target=false, has-links=false, is-checked=true}
+|
++-----------&gt;AppCompatTextView{id=2131689635, res-name=text1, visibility=VISIBLE, width=96, height=48, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=44.0, y=0.0, text=recreate, input-type=0, ime-target=false, has-links=false}
+|
++-----------&gt;AppCompatImageView{id=2131689637, res-name=btn_rhymer, desc=Rhymer, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=140.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689638, res-name=btn_thesaurus, desc=Thesaurus, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=184.0, y=2.0}
+|
++-----------&gt;AppCompatImageView{id=2131689639, res-name=btn_dictionary, desc=Dictionary, visibility=VISIBLE, width=44, height=44, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=228.0, y=2.0}
+|
++----&gt;ViewStubCompat{id=2131689572, res-name=action_mode_bar_stub, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+|
++-&gt;View{id=16908335, res-name=statusBarBackground, visibility=VISIBLE, width=320, height=24, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+|
+at dalvik.system.VMStack.getThreadStackTrace(Native Method)
+at java.lang.Thread.getStackTrace(Thread.java:1566)
+at android.support.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:92)
+at android.support.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:56)
+at android.support.test.espresso.ViewInteraction.runSynchronouslyOnUiThread(ViewInteraction.java:184)
+at android.support.test.espresso.ViewInteraction.check(ViewInteraction.java:158)
+at ca.rmen.android.poetassistant.main.TestUiUtils.checkTitleStripCenterTitle(TestUiUtils.java:91)
+at ca.rmen.android.poetassistant.main.TestUiUtils.checkTitleStripOrTab(TestUiUtils.java:80)
+at ca.rmen.android.poetassistant.main.CustomChecks.checkAllStarredWords(CustomChecks.java:116)
+at ca.rmen.android.poetassistant.main.IntegrationTest.runIntegrationTest(IntegrationTest.java:130)
+at ca.rmen.android.poetassistant.main.IntegrationTest.integrationTest2(IntegrationTest.java:187)
+at java.lang.reflect.Method.invoke(Native Method)
+at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+at android.support.test.internal.statement.UiThreadStatement.evaluate(UiThreadStatement.java:55)
+at android.support.test.rule.ActivityTestRule$ActivityStatement.evaluate(ActivityTestRule.java:270)
+at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runners.Suite.runChild(Suite.java:128)
+at org.junit.runners.Suite.runChild(Suite.java:27)
+at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+at android.support.test.internal.runner.TestExecutor.execute(TestExecutor.java:59)
+at android.support.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:262)
+at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1932)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>TESTE(AVD) - 7.1.1</th>
+</tr>
+</thead>
+<tr>
+<td>cleanLayout1Test</td>
+<td class="failures">failed (1m15.81s)</td>
+</tr>
+<tr>
+<td>cleanLayout2Test</td>
+<td class="failures">failed (52.320s)</td>
+</tr>
+<tr>
+<td>copyCleanLayoutTest</td>
+<td class="success">passed (35.473s)</td>
+</tr>
+<tr>
+<td>copyTest</td>
+<td class="success">passed (14.037s)</td>
+</tr>
+<tr>
+<td>integrationTest1</td>
+<td class="failures">failed (24.482s)</td>
+</tr>
+<tr>
+<td>integrationTest2</td>
+<td class="failures">failed (27.366s)</td>
+</tr>
+<tr>
+<td>openAboutScreenTest</td>
+<td class="success">passed (1m21.18s)</td>
+</tr>
+<tr>
+<td>themeTest</td>
+<td class="success">passed (44.722s)</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="footer">
+<p>Generated by 
+<a href="http://www.gradle.org">Gradle 3.3</a> at 18/10/2017 20:36:10</p>
+</div>
+</div>
+</body>
