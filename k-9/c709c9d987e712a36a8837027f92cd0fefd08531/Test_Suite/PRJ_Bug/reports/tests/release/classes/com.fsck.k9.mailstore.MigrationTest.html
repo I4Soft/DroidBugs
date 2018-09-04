@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.fsck.k9.mailstore.MigrationTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.fsck.k9.mailstore.MigrationTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.fsck.k9.mailstore.html">com.fsck.k9.mailstore</a> &gt; MigrationTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">8</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1m18.89s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">migrateHtmlWithRelatedMessage</td>
+<td>10.726s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">migrateMixedWithAttachments</td>
+<td>8.100s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">migratePgpInlineClearsignedMessage</td>
+<td>9.634s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">migratePgpInlineEncryptedMessage</td>
+<td>11.072s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">migratePgpMimeEncryptedMessage</td>
+<td>12.373s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">migratePgpMimeSignedMessage</td>
+<td>9.069s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">migrateTextHtml</td>
+<td>8.128s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">migrateTextPlain</td>
+<td>9.784s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>I/k9: Upgrading database from version 50 to version 55
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+D/k9: migrating 1 messages
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=2 (# cursors opened by this proc=2)
+D/SQLiteCursor: received count(*) from native_fill_window: 12
+D/k9: Processing mail with simple structure
+D/k9: deleting old attachment directory
+D/k9: Migration succeeded, dropping old tables.
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+I/k9: Registered: unmount receiver
+I/k9: Registered: shutdown receiver
+I/k9: Upgrading database from version 50 to version 55
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+D/k9: migrating 1 messages
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=2 (# cursors opened by this proc=2)
+D/SQLiteCursor: received count(*) from native_fill_window: 12
+D/k9: Processing mail with simple structure
+D/k9: deleting old attachment directory
+D/k9: Migration succeeded, dropping old tables.
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+I/k9: Registered: unmount receiver
+I/k9: Registered: shutdown receiver
+I/k9: Upgrading database from version 50 to version 55
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+D/k9: migrating 1 messages
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=2 (# cursors opened by this proc=2)
+D/SQLiteCursor: received count(*) from native_fill_window: 9
+D/k9: Processing mail with simple structure
+D/k9: deleting old attachment directory
+D/k9: Migration succeeded, dropping old tables.
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 3
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+I/k9: Registered: unmount receiver
+I/k9: Registered: shutdown receiver
+I/k9: Upgrading database from version 50 to version 55
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+D/k9: migrating 1 messages
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=2 (# cursors opened by this proc=2)
+D/SQLiteCursor: received count(*) from native_fill_window: 11
+D/k9: Processing mail with complex data structure as multipart/mixed
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=2 (# cursors opened by this proc=2)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=2 (# cursors opened by this proc=2)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+D/k9: processing attachment 6, attached.jpg, image/jpeg, null, content://com.fsck.k9.attachmentprovider/ac844d69-42db-47f0-84ff-a34af4c5a435/6/RAW
+E/k9: attached file doesn't exist. mark as missing
+D/k9: matching attachment is in local cache
+D/k9: deleting old attachment directory
+D/k9: Migration succeeded, dropping old tables.
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 5
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+I/k9: Registered: unmount receiver
+I/k9: Registered: shutdown receiver
+I/k9: Upgrading database from version 50 to version 55
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+D/k9: migrating 1 messages
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=2 (# cursors opened by this proc=2)
+D/SQLiteCursor: received count(*) from native_fill_window: 8
+D/k9: Processing mail with complex data structure as multipart/mixed
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=2 (# cursors opened by this proc=2)
+D/SQLiteCursor: received count(*) from native_fill_window: 0
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=2 (# cursors opened by this proc=2)
+D/SQLiteCursor: received count(*) from native_fill_window: 2
+D/k9: processing attachment 5, smirk.png, image/png, 1.2, null
+D/k9: matching attachment is in local cache
+D/k9: processing attachment 6, signature.asc, application/pgp-signature, 2, null
+D/k9: matching attachment is in local cache
+D/k9: deleting old attachment directory
+D/k9: Migration succeeded, dropping old tables.
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 6
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+I/k9: Registered: unmount receiver
+I/k9: Registered: shutdown receiver
+I/k9: Upgrading database from version 50 to version 55
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+D/k9: migrating 1 messages
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=2 (# cursors opened by this proc=2)
+D/SQLiteCursor: received count(*) from native_fill_window: 13
+D/k9: Processing mail with simple structure
+D/k9: deleting old attachment directory
+D/k9: Migration succeeded, dropping old tables.
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+I/k9: Registered: unmount receiver
+I/k9: Registered: shutdown receiver
+I/k9: Upgrading database from version 50 to version 55
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+D/k9: migrating 1 messages
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=2 (# cursors opened by this proc=2)
+D/SQLiteCursor: received count(*) from native_fill_window: 13
+D/k9: Attempting to migrate multipart/encrypted as pgp/mime
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=2 (# cursors opened by this proc=2)
+D/SQLiteCursor: received count(*) from native_fill_window: 2
+D/k9: processing attachment 1, null, application/pgp-encrypted, null, content://com.fsck.k9.attachmentprovider/67c90aa8-7af4-4c85-9f06-937431cc5ad7/1/RAW
+E/k9: attached file doesn't exist. mark as missing
+D/k9: matching attachment is in local cache
+D/k9: processing attachment 2, msg.asc, application/octet-stream, null, content://com.fsck.k9.attachmentprovider/67c90aa8-7af4-4c85-9f06-937431cc5ad7/2/RAW
+E/k9: attached file doesn't exist. mark as missing
+D/k9: matching attachment is in local cache
+D/k9: deleting old attachment directory
+D/k9: Migration succeeded, dropping old tables.
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 3
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+I/k9: Registered: unmount receiver
+I/k9: Registered: shutdown receiver
+I/k9: Upgrading database from version 50 to version 55
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+D/k9: migrating 1 messages
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=2 (# cursors opened by this proc=2)
+D/SQLiteCursor: received count(*) from native_fill_window: 8
+D/k9: Processing mail with complex data structure as multipart/mixed
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=2 (# cursors opened by this proc=2)
+D/SQLiteCursor: received count(*) from native_fill_window: 0
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=2 (# cursors opened by this proc=2)
+D/SQLiteCursor: received count(*) from native_fill_window: 2
+D/k9: processing attachment 3, k9small.png, image/png, 2, content://com.fsck.k9.attachmentprovider/1957c996-b7f0-4090-bb83-50716fb1d0db/3/RAW
+D/k9: processing attachment 4, baduri.png, application/whatevs, 2, content://com.fsck.k9.attachmentprovider/1957c996-b7f0-4090-bb83-50716fb1d0db/5/RAW
+E/k9: mismatched attachment id. mark as missing
+D/k9: matching attachment is in local cache
+D/k9: deleting stale attachment file: 5
+D/k9: deleting old attachment directory
+D/k9: Migration succeeded, dropping old tables.
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 6
+I/CursorWindowStats: Created a new Cursor. # Open Cursors=1 (# cursors opened by this proc=1)
+D/SQLiteCursor: received count(*) from native_fill_window: 1
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.9</a> at 31/08/2017 20:11:35</p>
+</div>
+</div>
+</body>
+</html>

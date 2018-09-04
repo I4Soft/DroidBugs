@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.fsck.k9.notification.SendFailedNotificationsTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.fsck.k9.notification.SendFailedNotificationsTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.fsck.k9.notification.html">com.fsck.k9.notification</a> &gt; SendFailedNotificationsTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.097s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testClearSendFailedNotification</td>
+<td>0.088s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testShowSendFailedNotification</td>
+<td>0.009s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>D/StrictMode: StrictMode policy violation; ~duration=0 ms: android.os.StrictMode$StrictModeDiskWriteViolation: policy=31 violation=1
+	at android.os.StrictMode$AndroidBlockGuardPolicy.$$robo$$onWriteToDisk(StrictMode.java:1111)
+	at android.os.StrictMode$AndroidBlockGuardPolicy.onWriteToDisk(StrictMode.java)
+	at libcore.io.BlockGuardOs.$$robo$$chmod(BlockGuardOs.java:72)
+	at libcore.io.BlockGuardOs.chmod(BlockGuardOs.java)
+	at android.system.Os.$$robo$$chmod(Os.java:60)
+	at android.system.Os.chmod(Os.java)
+	at android.os.FileUtils.$$robo$$setPermissions(FileUtils.java:88)
+	at android.os.FileUtils.setPermissions(FileUtils.java)
+	at android.app.ContextImpl.$$robo$$createFilesDirLocked(ContextImpl.java:1004)
+	at android.app.ContextImpl.createFilesDirLocked(ContextImpl.java)
+	at android.app.ContextImpl.$$robo$$getCacheDir(ContextImpl.java:1080)
+	at android.app.ContextImpl.getCacheDir(ContextImpl.java)
+	at android.content.ContextWrapper.$$robo$$getCacheDir(ContextWrapper.java:232)
+	at android.content.ContextWrapper.getCacheDir(ContextWrapper.java)
+	at com.fsck.k9.K9.onCreate(K9.java:545)
+	at org.robolectric.internal.ParallelUniverse.setUpApplicationState(ParallelUniverse.java:147)
+	at org.robolectric.RobolectricTestRunner$2.evaluate(RobolectricTestRunner.java:329)
+	at org.robolectric.RobolectricTestRunner.runChild(RobolectricTestRunner.java:259)
+	at org.robolectric.RobolectricTestRunner.runChild(RobolectricTestRunner.java:41)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.robolectric.RobolectricTestRunner$1.evaluate(RobolectricTestRunner.java:199)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy3.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.GeneratedMethodAccessor31.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+
+D/StrictMode: StrictMode policy violation; ~duration=0 ms: android.os.StrictMode$StrictModeDiskWriteViolation: policy=31 violation=1
+	at android.os.StrictMode$AndroidBlockGuardPolicy.$$robo$$onWriteToDisk(StrictMode.java:1111)
+	at android.os.StrictMode$AndroidBlockGuardPolicy.onWriteToDisk(StrictMode.java)
+	at libcore.io.BlockGuardOs.$$robo$$chmod(BlockGuardOs.java:72)
+	at libcore.io.BlockGuardOs.chmod(BlockGuardOs.java)
+	at android.system.Os.$$robo$$chmod(Os.java:60)
+	at android.system.Os.chmod(Os.java)
+	at android.os.FileUtils.$$robo$$setPermissions(FileUtils.java:88)
+	at android.os.FileUtils.setPermissions(FileUtils.java)
+	at android.app.ContextImpl.$$robo$$setFilePermissionsFromMode(ContextImpl.java:2369)
+	at android.app.ContextImpl.setFilePermissionsFromMode(ContextImpl.java)
+	at android.app.ContextImpl.$$robo$$getDir(ContextImpl.java:2223)
+	at android.app.ContextImpl.getDir(ContextImpl.java)
+	at android.content.ContextWrapper.$$robo$$getDir(ContextWrapper.java:257)
+	at android.content.ContextWrapper.getDir(ContextWrapper.java)
+	at com.fsck.k9.K9.onCreate(K9.java:547)
+	at org.robolectric.internal.ParallelUniverse.setUpApplicationState(ParallelUniverse.java:147)
+	at org.robolectric.RobolectricTestRunner$2.evaluate(RobolectricTestRunner.java:329)
+	at org.robolectric.RobolectricTestRunner.runChild(RobolectricTestRunner.java:259)
+	at org.robolectric.RobolectricTestRunner.runChild(RobolectricTestRunner.java:41)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.robolectric.RobolectricTestRunner$1.evaluate(RobolectricTestRunner.java:199)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy3.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.GeneratedMethodAccessor31.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+
+I/K9: Registered: unmount receiver
+I/K9: Registered: shutdown receiver
+I/K9: Registered: unmount receiver
+I/K9: Registered: shutdown receiver
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 3.3</a> at 31/08/2017 18:58:00</p>
+</div>
+</div>
+</body>
+</html>

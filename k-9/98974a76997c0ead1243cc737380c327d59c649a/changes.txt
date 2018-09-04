@@ -1,0 +1,38 @@
+k9mail renamed to app
+/k9mail/test, k9mail/androidTest from PRJ_Fix copied to /app/test, app/androidTest
+settings.gradle include 'app'
+Imap Connection - lines 566 to 589 commented	
+/*@Test
+    public void open_withStartTlsCapability_shouldIssueStartTlsCommand() throws Exception {
+        settings.setAuthType(AuthType.PLAIN);
+        settings.setConnectionSecurity(ConnectionSecurity.STARTTLS_REQUIRED);
+        MockImapServer server = new MockImapServer();
+        preAuthenticationDialog(server, "STARTTLS LOGINDISABLED");
+        server.expect("2 STARTTLS");
+        server.output("2 OK [CAPABILITY IMAP4REV1 NAMESPACE]");
+        server.startTls();
+        server.expect("3 CAPABILITY");
+        server.output("* CAPABILITY IMAP4 IMAP4REV1 NAMESPACE");
+        server.output("3 OK");
+        server.expect("4 LOGIN \"" + USERNAME + "\" \"" + PASSWORD + "\"");
+        server.output("4 OK LOGIN completed");
+        server.expect("5 NAMESPACE");
+        server.output("* NAMESPACE ((\"\" \"/\")) NIL NIL");
+        server.output("5 OK command completed");
+        ImapConnection imapConnection = startServerAndCreateImapConnection(server);
+
+        imapConnection.open();
+
+        server.verifyConnectionStillOpen();
+        server.verifyInteractionCompleted();
+    }*/
+
+TrustManagerFactoryTest - Lines 300 to 305 commented
+/*@Test
+    public void testGloballyTrustedCertificateChain() throws Exception {
+        X509TrustManager trustManager = TrustManagerFactory.get("www.linux.com", PORT1);
+        X509Certificate[] certificates = new X509Certificate[] { mLinuxComCert, mLinuxComFirstParentCert};
+        trustManager.checkServerTrusted(certificates, "authType");
+    }*/
+
+

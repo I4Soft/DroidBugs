@@ -1,0 +1,1 @@
+k9mail/src/main/java/com/fsck/k9/provider/EmailProvider.java

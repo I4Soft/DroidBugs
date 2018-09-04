@@ -1,0 +1,16 @@
+diff 98974a76997c0ead1243cc737380c327d59c649a/Files_Previous/UriLinkifier.java 98974a76997c0ead1243cc737380c327d59c649a/Files_Updated/UriLinkifier.java
+54c54
+<                 currentPos++;
+---
+>                 currentPos = startPos + 1;
+diff 98974a76997c0ead1243cc737380c327d59c649a/Files_Previous/UriLinkifierTest.java 98974a76997c0ead1243cc737380c327d59c649a/Files_Updated/UriLinkifierTest.java
+117a118,126
+> 
+>     @Test
+>     public void schemaMatchWithInvalidUriInMiddleOfTextFollowedVyValidUri() throws Exception {
+>         String text = "prefix http:42 http://example.org";
+> 
+>         UriLinkifier.linkifyText(text, outputBuffer);
+> 
+>         assertEquals("prefix http:42 <a href=\"http://example.org\">http://example.org</a>", outputBuffer.toString());
+>     }
