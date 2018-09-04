@@ -1,0 +1,8 @@
+PRJ_Fix app/androidTest copied to PRJ_Bug app/androidTest
+FrequencyCardTest, HistoryCardTest, ScoreCardTest, StreakCardTest, FrequencyWidgetTest, HistoryWidgetTest, ScoreWidgetTest, StreakWidgetTest excluded
+build.gradle
+	lintOptions{
+		abortOnError false	
+	}
+all package.info[] excluded
+jacoco version in coverage.gradle changed to 7.4.201502262128

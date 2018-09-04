@@ -1,0 +1,4 @@
+Bug to Fix
+org.isoron.uhabits.models.sqlite.HabitRecordTest#HabitRecordTest
+Fix to Bug
+org.isoron.uhabits.HabitLoggerTest#HabitLoggerTest

@@ -1,0 +1,2 @@
+app/src/androidTest/java/org/isoron/uhabits/models/sqlite/HabitRecordTest.java
+app/src/main/java/org/isoron/uhabits/models/sqlite/records/HabitRecord.java

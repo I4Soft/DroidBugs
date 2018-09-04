@@ -1,0 +1,5 @@
+diffc46fa84135a38b719234a73862e8432be5f5204e/Files_Previous/HabitRecord.java c46fa84135a38b719234a73862e8432be5f5204e/Files_Updated/HabitRecord.java
+150a151,152
+>         this.reminderMin = null;
+>         this.reminderHour = null;
+Somente em c46fa84135a38b719234a73862e8432be5f5204e/Files_Updated: HabitRecordTest.java
