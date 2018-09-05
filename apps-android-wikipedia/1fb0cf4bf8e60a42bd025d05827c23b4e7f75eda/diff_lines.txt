@@ -1,0 +1,17 @@
+diff 1fb0cf4bf8e60a42bd025d05827c23b4e7f75eda/Files_Previous/GsonUtil.java 1fb0cf4bf8e60a42bd025d05827c23b4e7f75eda/Files_Updated/GsonUtil.java
+8a9
+> import org.wikipedia.dataclient.WikiSite;
+18a20
+>             .registerTypeAdapter(WikiSite.class, new WikiSiteTypeAdapter().nullSafe())
+diff 1fb0cf4bf8e60a42bd025d05827c23b4e7f75eda/Files_Previous/WikiSite.java 1fb0cf4bf8e60a42bd025d05827c23b4e7f75eda/Files_Updated/WikiSite.java
+54a55
+>     // todo: remove @SerializedName. this is now in the TypeAdapter and a "uri" case may be added
+87a89,94
+>     }
+> 
+>     /** This method cannot resolve multi-dialect wikis like Simplified and Traditional Chinese as
+>      the variant is unavailable. */
+>     public WikiSite(@NonNull Uri uri) {
+>         this(uri, authorityToLanguageCode(uri.getAuthority()));
+Somente em 1fb0cf4bf8e60a42bd025d05827c23b4e7f75eda/Files_Updated: WikiSiteTypeAdapter.java
+Somente em 1fb0cf4bf8e60a42bd025d05827c23b4e7f75eda/Files_Updated: WikiSiteTypeAdapterTest.java

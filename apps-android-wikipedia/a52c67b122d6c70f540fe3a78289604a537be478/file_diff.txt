@@ -1,0 +1,2 @@
+app/src/main/java/org/wikipedia/json/NamespaceTypeAdapter.java
+app/src/test/java/org/wikipedia/json/NamespaceTypeAdapterTest.java

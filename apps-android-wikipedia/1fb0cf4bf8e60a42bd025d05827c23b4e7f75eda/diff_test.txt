@@ -1,0 +1,4 @@
+org.wikipedia.json.WikiSiteTypeAdapterTest#testReadLegacyString
+org.wikipedia.json.WikiSiteTypeAdapterTest#testReadLegacyUriLang
+org.wikipedia.json.WikiSiteTypeAdapterTest#testReadLegacyLang
+org.wikipedia.json.WikiSiteTypeAdapterTest#testReadLegacyUri

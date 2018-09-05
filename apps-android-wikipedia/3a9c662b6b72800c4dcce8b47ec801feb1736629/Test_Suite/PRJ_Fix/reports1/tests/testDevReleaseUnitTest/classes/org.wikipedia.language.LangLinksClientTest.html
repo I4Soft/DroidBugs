@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class org.wikipedia.language.LangLinksClientTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class org.wikipedia.language.LangLinksClientTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.wikipedia.language.html">org.wikipedia.language</a> &gt; LangLinksClientTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.169s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testRequestResponseApiError</td>
+<td>0.021s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRequestResponseFailure</td>
+<td>0.065s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRequestResponseMalformed</td>
+<td>0.023s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRequestSuccessHasResults</td>
+<td>0.025s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRequestSuccessNoResults</td>
+<td>0.035s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>W/unknown:Fresco: Fresco has already been initialized! `Fresco.initialize(...)` should only be called 1 single time to avoid memory leaks!
+I/org.wikipedia.WikipediaApp: onCreate():180: Registered reading list page observer
+D/OkHttp: --&gt; GET http://localhost:57701/w/api.php?action=query&amp;format=json&amp;prop=langlinks&amp;lllimit=500&amp;continue=&amp;titles=Scientology http/1.1
+V/okhttp3.internal.http.RealInterceptorChain: proceed():92: http://localhost:57701/w/api.php?action=query&amp;format=json&amp;prop=langlinks&amp;lllimit=500&amp;continue=&amp;titles=Scientology [net]
+D/OkHttp: &lt;-- HTTP FAILED: org.wikipedia.dataclient.okhttp.HttpStatusException
+W/unknown:Fresco: Fresco has already been initialized! `Fresco.initialize(...)` should only be called 1 single time to avoid memory leaks!
+I/org.wikipedia.WikipediaApp: onCreate():180: Registered reading list page observer
+D/OkHttp: --&gt; GET http://localhost:38872/w/api.php?action=query&amp;format=json&amp;prop=langlinks&amp;lllimit=500&amp;continue=&amp;titles=Scientology http/1.1
+V/okhttp3.internal.http.RealInterceptorChain: proceed():92: http://localhost:38872/w/api.php?action=query&amp;format=json&amp;prop=langlinks&amp;lllimit=500&amp;continue=&amp;titles=Scientology [net]
+D/OkHttp: &lt;-- 200 OK http://localhost:38872/w/api.php?action=query&amp;format=json&amp;prop=langlinks&amp;lllimit=500&amp;continue=&amp;titles=Scientology (4ms, 210-byte body)
+E/retrofit2.ExecutorCallAdapterFactory$ExecutorCallbackCall$1$1: run():68: API error fetching langlinks: unknown_action
+W/unknown:Fresco: Fresco has already been initialized! `Fresco.initialize(...)` should only be called 1 single time to avoid memory leaks!
+I/org.wikipedia.WikipediaApp: onCreate():180: Registered reading list page observer
+D/OkHttp: --&gt; GET http://localhost:46872/w/api.php?action=query&amp;format=json&amp;prop=langlinks&amp;lllimit=500&amp;continue=&amp;titles=Scientology http/1.1
+V/okhttp3.internal.http.RealInterceptorChain: proceed():92: http://localhost:46872/w/api.php?action=query&amp;format=json&amp;prop=langlinks&amp;lllimit=500&amp;continue=&amp;titles=Scientology [net]
+D/OkHttp: &lt;-- 200 OK http://localhost:46872/w/api.php?action=query&amp;format=json&amp;prop=langlinks&amp;lllimit=500&amp;continue=&amp;titles=Scientology (9ms, 273-byte body)
+W/unknown:Fresco: Fresco has already been initialized! `Fresco.initialize(...)` should only be called 1 single time to avoid memory leaks!
+I/org.wikipedia.WikipediaApp: onCreate():180: Registered reading list page observer
+D/OkHttp: --&gt; GET http://localhost:46691/w/api.php?action=query&amp;format=json&amp;prop=langlinks&amp;lllimit=500&amp;continue=&amp;titles=Scientology http/1.1
+V/okhttp3.internal.http.RealInterceptorChain: proceed():92: http://localhost:46691/w/api.php?action=query&amp;format=json&amp;prop=langlinks&amp;lllimit=500&amp;continue=&amp;titles=Scientology [net]
+D/OkHttp: &lt;-- 200 OK http://localhost:46691/w/api.php?action=query&amp;format=json&amp;prop=langlinks&amp;lllimit=500&amp;continue=&amp;titles=Scientology (5ms, 470-byte body)
+W/unknown:Fresco: Fresco has already been initialized! `Fresco.initialize(...)` should only be called 1 single time to avoid memory leaks!
+I/org.wikipedia.WikipediaApp: onCreate():180: Registered reading list page observer
+D/OkHttp: --&gt; GET http://localhost:40196/w/api.php?action=query&amp;format=json&amp;prop=langlinks&amp;lllimit=500&amp;continue=&amp;titles=Scientology http/1.1
+V/okhttp3.internal.http.RealInterceptorChain: proceed():92: http://localhost:40196/w/api.php?action=query&amp;format=json&amp;prop=langlinks&amp;lllimit=500&amp;continue=&amp;titles=Scientology [net]
+D/OkHttp: &lt;-- 200 OK http://localhost:40196/w/api.php?action=query&amp;format=json&amp;prop=langlinks&amp;lllimit=500&amp;continue=&amp;titles=Scientology (8ms, 13-byte body)
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>dez 22, 2017 2:45:50 AM okhttp3.mockwebserver.MockWebServer$2 execute
+INFORMAÇÕES: MockWebServer[57701] starting to accept connections
+dez 22, 2017 2:45:50 AM okhttp3.mockwebserver.MockWebServer$3 processOneRequest
+INFORMAÇÕES: MockWebServer[57701] received request: GET /w/api.php?action=query&amp;format=json&amp;prop=langlinks&amp;lllimit=500&amp;continue=&amp;titles=Scientology HTTP/1.1 and responded: HTTP/1.1 404 Client Error
+dez 22, 2017 2:45:50 AM okhttp3.mockwebserver.MockWebServer$2 acceptConnections
+INFORMAÇÕES: MockWebServer[57701] done accepting connections: Socket closed
+dez 22, 2017 2:45:50 AM okhttp3.mockwebserver.MockWebServer$2 execute
+INFORMAÇÕES: MockWebServer[38872] starting to accept connections
+dez 22, 2017 2:45:50 AM okhttp3.mockwebserver.MockWebServer$2 acceptConnections
+INFORMAÇÕES: MockWebServer[38872] done accepting connections: Socket closed
+dez 22, 2017 2:45:50 AM okhttp3.mockwebserver.MockWebServer$3 processOneRequest
+INFORMAÇÕES: MockWebServer[38872] received request: GET /w/api.php?action=query&amp;format=json&amp;prop=langlinks&amp;lllimit=500&amp;continue=&amp;titles=Scientology HTTP/1.1 and responded: HTTP/1.1 200 OK
+dez 22, 2017 2:45:50 AM okhttp3.mockwebserver.MockWebServer$2 execute
+INFORMAÇÕES: MockWebServer[46872] starting to accept connections
+dez 22, 2017 2:45:50 AM okhttp3.mockwebserver.MockWebServer$3 processOneRequest
+INFORMAÇÕES: MockWebServer[46872] received request: GET /w/api.php?action=query&amp;format=json&amp;prop=langlinks&amp;lllimit=500&amp;continue=&amp;titles=Scientology HTTP/1.1 and responded: HTTP/1.1 200 OK
+dez 22, 2017 2:45:50 AM okhttp3.mockwebserver.MockWebServer$2 acceptConnections
+INFORMAÇÕES: MockWebServer[46872] done accepting connections: Socket closed
+dez 22, 2017 2:45:50 AM okhttp3.mockwebserver.MockWebServer$2 execute
+INFORMAÇÕES: MockWebServer[46691] starting to accept connections
+dez 22, 2017 2:45:50 AM okhttp3.mockwebserver.MockWebServer$3 processOneRequest
+INFORMAÇÕES: MockWebServer[46691] received request: GET /w/api.php?action=query&amp;format=json&amp;prop=langlinks&amp;lllimit=500&amp;continue=&amp;titles=Scientology HTTP/1.1 and responded: HTTP/1.1 200 OK
+dez 22, 2017 2:45:50 AM okhttp3.mockwebserver.MockWebServer$2 acceptConnections
+INFORMAÇÕES: MockWebServer[46691] done accepting connections: Socket closed
+dez 22, 2017 2:45:50 AM okhttp3.mockwebserver.MockWebServer$2 execute
+INFORMAÇÕES: MockWebServer[40196] starting to accept connections
+dez 22, 2017 2:45:50 AM okhttp3.mockwebserver.MockWebServer$2 acceptConnections
+INFORMAÇÕES: MockWebServer[40196] done accepting connections: Socket closed
+dez 22, 2017 2:45:50 AM okhttp3.mockwebserver.MockWebServer$3 processOneRequest
+INFORMAÇÕES: MockWebServer[40196] received request: GET /w/api.php?action=query&amp;format=json&amp;prop=langlinks&amp;lllimit=500&amp;continue=&amp;titles=Scientology HTTP/1.1 and responded: HTTP/1.1 200 OK
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 3.4</a> at 22/12/2017 02:45:57</p>
+</div>
+</div>
+</body>
+</html>

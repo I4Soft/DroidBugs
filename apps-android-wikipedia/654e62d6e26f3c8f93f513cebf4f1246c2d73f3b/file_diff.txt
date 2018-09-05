@@ -1,0 +1,2 @@
+app/src/main/java/org/wikipedia/page/Namespace.java
+app/src/test/java/org/wikipedia/page/NamespaceTest.java

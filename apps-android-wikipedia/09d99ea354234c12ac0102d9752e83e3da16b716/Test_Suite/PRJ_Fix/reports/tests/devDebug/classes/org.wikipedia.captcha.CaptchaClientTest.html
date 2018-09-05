@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class org.wikipedia.captcha.CaptchaClientTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class org.wikipedia.captcha.CaptchaClientTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.wikipedia.captcha.html">org.wikipedia.captcha</a> &gt; CaptchaClientTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.162s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testRequestResponseFailure</td>
+<td>0.061s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRequestResponseMalformed</td>
+<td>0.037s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRequestSuccess</td>
+<td>0.064s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>DiskLruCache /tmp/android-tmp-robolectric643458206646206792/cache/wp_pagecache is corrupt: /tmp/android-tmp-robolectric643458206646206792/cache/wp_pagecache/journal (Arquivo ou diretório não encontrado), removing
+W/unknown:Fresco: Fresco has already been initialized! `Fresco.initialize(...)` should only be called 1 single time to avoid memory leaks!
+I/org.wikipedia.WikipediaApp: onCreate():203: Registered reading list page observer
+W/unknown:Fresco: Fresco has already been initialized! `Fresco.initialize(...)` should only be called 1 single time to avoid memory leaks!
+I/org.wikipedia.WikipediaApp: onCreate():203: Registered reading list page observer
+W/unknown:Fresco: Fresco has already been initialized! `Fresco.initialize(...)` should only be called 1 single time to avoid memory leaks!
+I/org.wikipedia.WikipediaApp: onCreate():203: Registered reading list page observer
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Exception in thread &quot;AsyncTask #9&quot; java.lang.RuntimeException: java.lang.RuntimeException: java.lang.NullPointerException
+	at org.robolectric.util.SimpleFuture.run(SimpleFuture.java:61)
+	at org.robolectric.shadows.ShadowAsyncTask$3.run(ShadowAsyncTask.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.RuntimeException: java.lang.NullPointerException
+	at org.robolectric.shadows.ShadowAsyncTask$1.done(ShadowAsyncTask.java:57)
+	at org.robolectric.util.SimpleFuture.run(SimpleFuture.java:58)
+	... 4 more
+Caused by: java.lang.NullPointerException
+	at org.robolectric.shadows.ShadowAsyncTask$1.done(ShadowAsyncTask.java:38)
+	... 5 more
+ago 26, 2017 5:11:47 PM okhttp3.mockwebserver.MockWebServer$3 execute
+INFORMAÇÕES: MockWebServer[47806] starting to accept connections
+ago 26, 2017 5:11:47 PM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFORMAÇÕES: MockWebServer[47806] received request: GET /w/api.php?action=fancycaptchareload&amp;format=json&amp;formatversion=2 HTTP/1.1 and responded: HTTP/1.1 404 Client Error
+ago 26, 2017 5:11:47 PM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFORMAÇÕES: MockWebServer[47806] done accepting connections: Socket closed
+ago 26, 2017 5:11:47 PM okhttp3.mockwebserver.MockWebServer$3 execute
+INFORMAÇÕES: MockWebServer[41904] starting to accept connections
+ago 26, 2017 5:11:47 PM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFORMAÇÕES: MockWebServer[41904] received request: GET /w/api.php?action=fancycaptchareload&amp;format=json&amp;formatversion=2 HTTP/1.1 and responded: HTTP/1.1 200 OK
+ago 26, 2017 5:11:47 PM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFORMAÇÕES: MockWebServer[41904] done accepting connections: Socket closed
+ago 26, 2017 5:11:47 PM okhttp3.mockwebserver.MockWebServer$3 execute
+INFORMAÇÕES: MockWebServer[39881] starting to accept connections
+ago 26, 2017 5:11:47 PM okhttp3.mockwebserver.MockWebServer$3 acceptConnections
+INFORMAÇÕES: MockWebServer[39881] done accepting connections: Socket closed
+ago 26, 2017 5:11:47 PM okhttp3.mockwebserver.MockWebServer$4 processOneRequest
+INFORMAÇÕES: MockWebServer[39881] received request: GET /w/api.php?action=fancycaptchareload&amp;format=json&amp;formatversion=2 HTTP/1.1 and responded: HTTP/1.1 200 OK
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.14.1</a> at 26/08/2017 17:11:50</p>
+</div>
+</div>
+</body>
+</html>

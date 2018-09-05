@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class org.wikipedia.edit.EditClientTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class org.wikipedia.edit.EditClientTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.wikipedia.edit.html">org.wikipedia.edit</a> &gt; EditClientTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">9</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.208s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testRequestResponse404</td>
+<td>0.017s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRequestResponseAbuseFilter</td>
+<td>0.020s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRequestResponseApiError</td>
+<td>0.025s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRequestResponseAssertUserFailed</td>
+<td>0.016s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRequestResponseCaptcha</td>
+<td>0.021s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRequestResponseGenericApiError</td>
+<td>0.026s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRequestResponseMalformed</td>
+<td>0.017s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRequestResponseSpamBlacklist</td>
+<td>0.049s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRequestSuccessHasResults</td>
+<td>0.017s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>W/unknown:Fresco: Fresco has already been initialized! `Fresco.initialize(...)` should only be called 1 single time to avoid memory leaks!
+I/org.wikipedia.auth.AccountUtil: createAccountForLoggedInUser():21: account creation successful
+I/org.wikipedia.WikipediaApp: onCreate():180: Registered reading list page observer
+D/OkHttp: --&gt; POST http://localhost:59036/w/api.php?action=edit&amp;format=json http/1.1 (114-byte body)
+V/okhttp3.internal.http.RealInterceptorChain: proceed():92: http://localhost:59036/w/api.php?action=edit&amp;format=json [net]
+D/OkHttp: &lt;-- 200 OK http://localhost:59036/w/api.php?action=edit&amp;format=json (2ms, 210-byte body)
+W/unknown:Fresco: Fresco has already been initialized! `Fresco.initialize(...)` should only be called 1 single time to avoid memory leaks!
+I/org.wikipedia.auth.AccountUtil: createAccountForLoggedInUser():21: account creation successful
+I/org.wikipedia.WikipediaApp: onCreate():180: Registered reading list page observer
+D/OkHttp: --&gt; POST http://localhost:33415/w/api.php?action=edit&amp;format=json http/1.1 (114-byte body)
+V/okhttp3.internal.http.RealInterceptorChain: proceed():92: http://localhost:33415/w/api.php?action=edit&amp;format=json [net]
+D/OkHttp: &lt;-- 200 OK http://localhost:33415/w/api.php?action=edit&amp;format=json (2ms, 73-byte body)
+W/unknown:Fresco: Fresco has already been initialized! `Fresco.initialize(...)` should only be called 1 single time to avoid memory leaks!
+I/org.wikipedia.auth.AccountUtil: createAccountForLoggedInUser():21: account creation successful
+I/org.wikipedia.WikipediaApp: onCreate():180: Registered reading list page observer
+D/OkHttp: --&gt; POST http://localhost:35618/w/api.php?action=edit&amp;format=json http/1.1 (114-byte body)
+V/okhttp3.internal.http.RealInterceptorChain: proceed():92: http://localhost:35618/w/api.php?action=edit&amp;format=json [net]
+D/OkHttp: &lt;-- 200 OK http://localhost:35618/w/api.php?action=edit&amp;format=json (7ms, 210-byte body)
+W/unknown:Fresco: Fresco has already been initialized! `Fresco.initialize(...)` should only be called 1 single time to avoid memory leaks!
+I/org.wikipedia.auth.AccountUtil: createAccountForLoggedInUser():21: account creation successful
+I/org.wikipedia.WikipediaApp: onCreate():180: Registered reading list page observer
+D/OkHttp: --&gt; POST http://localhost:49605/w/api.php?action=edit&amp;format=json http/1.1 (114-byte body)
+V/okhttp3.internal.http.RealInterceptorChain: proceed():92: http://localhost:49605/w/api.php?action=edit&amp;format=json [net]
+D/OkHttp: &lt;-- 200 OK http://localhost:49605/w/api.php?action=edit&amp;format=json (3ms, 907-byte body)
+W/unknown:Fresco: Fresco has already been initialized! `Fresco.initialize(...)` should only be called 1 single time to avoid memory leaks!
+I/org.wikipedia.auth.AccountUtil: createAccountForLoggedInUser():21: account creation successful
+I/org.wikipedia.WikipediaApp: onCreate():180: Registered reading list page observer
+D/OkHttp: --&gt; POST http://localhost:51769/w/api.php?action=edit&amp;format=json http/1.1 (114-byte body)
+V/okhttp3.internal.http.RealInterceptorChain: proceed():92: http://localhost:51769/w/api.php?action=edit&amp;format=json [net]
+D/OkHttp: &lt;-- 200 OK http://localhost:51769/w/api.php?action=edit&amp;format=json (3ms, 220-byte body)
+W/unknown:Fresco: Fresco has already been initialized! `Fresco.initialize(...)` should only be called 1 single time to avoid memory leaks!
+I/org.wikipedia.auth.AccountUtil: createAccountForLoggedInUser():21: account creation successful
+I/org.wikipedia.WikipediaApp: onCreate():180: Registered reading list page observer
+D/OkHttp: --&gt; POST http://localhost:53201/w/api.php?action=edit&amp;format=json http/1.1 (114-byte body)
+V/okhttp3.internal.http.RealInterceptorChain: proceed():92: http://localhost:53201/w/api.php?action=edit&amp;format=json [net]
+D/OkHttp: &lt;-- HTTP FAILED: org.wikipedia.dataclient.okhttp.HttpStatusException
+W/unknown:Fresco: Fresco has already been initialized! `Fresco.initialize(...)` should only be called 1 single time to avoid memory leaks!
+I/org.wikipedia.auth.AccountUtil: createAccountForLoggedInUser():21: account creation successful
+I/org.wikipedia.WikipediaApp: onCreate():180: Registered reading list page observer
+D/OkHttp: --&gt; POST http://localhost:54340/w/api.php?action=edit&amp;format=json http/1.1 (126-byte body)
+V/okhttp3.internal.http.RealInterceptorChain: proceed():92: http://localhost:54340/w/api.php?action=edit&amp;format=json [net]
+D/OkHttp: &lt;-- 200 OK http://localhost:54340/w/api.php?action=edit&amp;format=json (2ms, 201-byte body)
+W/unknown:Fresco: Fresco has already been initialized! `Fresco.initialize(...)` should only be called 1 single time to avoid memory leaks!
+I/org.wikipedia.auth.AccountUtil: createAccountForLoggedInUser():21: account creation successful
+I/org.wikipedia.WikipediaApp: onCreate():180: Registered reading list page observer
+D/OkHttp: --&gt; POST http://localhost:58062/w/api.php?action=edit&amp;format=json http/1.1 (114-byte body)
+V/okhttp3.internal.http.RealInterceptorChain: proceed():92: http://localhost:58062/w/api.php?action=edit&amp;format=json [net]
+D/OkHttp: &lt;-- 200 OK http://localhost:58062/w/api.php?action=edit&amp;format=json (2ms, 233-byte body)
+W/unknown:Fresco: Fresco has already been initialized! `Fresco.initialize(...)` should only be called 1 single time to avoid memory leaks!
+I/org.wikipedia.auth.AccountUtil: createAccountForLoggedInUser():21: account creation successful
+I/org.wikipedia.WikipediaApp: onCreate():180: Registered reading list page observer
+D/OkHttp: --&gt; POST http://localhost:48252/w/api.php?action=edit&amp;format=json http/1.1 (114-byte body)
+V/okhttp3.internal.http.RealInterceptorChain: proceed():92: http://localhost:48252/w/api.php?action=edit&amp;format=json [net]
+D/OkHttp: &lt;-- 200 OK http://localhost:48252/w/api.php?action=edit&amp;format=json (3ms, 15-byte body)
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>dez 22, 2017 2:14:43 AM okhttp3.mockwebserver.MockWebServer$2 execute
+INFORMAÇÕES: MockWebServer[59036] starting to accept connections
+dez 22, 2017 2:14:43 AM okhttp3.mockwebserver.MockWebServer$2 acceptConnections
+INFORMAÇÕES: MockWebServer[59036] done accepting connections: Socket closed
+dez 22, 2017 2:14:43 AM okhttp3.mockwebserver.MockWebServer$3 processOneRequest
+INFORMAÇÕES: MockWebServer[59036] received request: POST /w/api.php?action=edit&amp;format=json HTTP/1.1 and responded: HTTP/1.1 200 OK
+dez 22, 2017 2:14:43 AM okhttp3.mockwebserver.MockWebServer$2 execute
+INFORMAÇÕES: MockWebServer[33415] starting to accept connections
+dez 22, 2017 2:14:43 AM okhttp3.mockwebserver.MockWebServer$2 acceptConnections
+INFORMAÇÕES: MockWebServer[33415] done accepting connections: Socket closed
+dez 22, 2017 2:14:43 AM okhttp3.mockwebserver.MockWebServer$3 processOneRequest
+INFORMAÇÕES: MockWebServer[33415] received request: POST /w/api.php?action=edit&amp;format=json HTTP/1.1 and responded: HTTP/1.1 200 OK
+dez 22, 2017 2:14:43 AM okhttp3.mockwebserver.MockWebServer$2 execute
+INFORMAÇÕES: MockWebServer[35618] starting to accept connections
+dez 22, 2017 2:14:43 AM okhttp3.mockwebserver.MockWebServer$3 processOneRequest
+INFORMAÇÕES: MockWebServer[35618] received request: POST /w/api.php?action=edit&amp;format=json HTTP/1.1 and responded: HTTP/1.1 200 OK
+dez 22, 2017 2:14:43 AM okhttp3.mockwebserver.MockWebServer$2 acceptConnections
+INFORMAÇÕES: MockWebServer[35618] done accepting connections: Socket closed
+dez 22, 2017 2:14:43 AM okhttp3.mockwebserver.MockWebServer$2 execute
+INFORMAÇÕES: MockWebServer[49605] starting to accept connections
+dez 22, 2017 2:14:43 AM okhttp3.mockwebserver.MockWebServer$3 processOneRequest
+INFORMAÇÕES: MockWebServer[49605] received request: POST /w/api.php?action=edit&amp;format=json HTTP/1.1 and responded: HTTP/1.1 200 OK
+dez 22, 2017 2:14:43 AM okhttp3.mockwebserver.MockWebServer$2 acceptConnections
+INFORMAÇÕES: MockWebServer[49605] done accepting connections: Socket closed
+dez 22, 2017 2:14:43 AM okhttp3.mockwebserver.MockWebServer$2 execute
+INFORMAÇÕES: MockWebServer[51769] starting to accept connections
+dez 22, 2017 2:14:43 AM okhttp3.mockwebserver.MockWebServer$3 processOneRequest
+INFORMAÇÕES: MockWebServer[51769] received request: POST /w/api.php?action=edit&amp;format=json HTTP/1.1 and responded: HTTP/1.1 200 OK
+dez 22, 2017 2:14:43 AM okhttp3.mockwebserver.MockWebServer$2 acceptConnections
+INFORMAÇÕES: MockWebServer[51769] done accepting connections: Socket closed
+dez 22, 2017 2:14:43 AM okhttp3.mockwebserver.MockWebServer$2 execute
+INFORMAÇÕES: MockWebServer[53201] starting to accept connections
+dez 22, 2017 2:14:43 AM okhttp3.mockwebserver.MockWebServer$3 processOneRequest
+INFORMAÇÕES: MockWebServer[53201] received request: POST /w/api.php?action=edit&amp;format=json HTTP/1.1 and responded: HTTP/1.1 404 Client Error
+dez 22, 2017 2:14:43 AM okhttp3.mockwebserver.MockWebServer$2 acceptConnections
+INFORMAÇÕES: MockWebServer[53201] done accepting connections: Socket closed
+dez 22, 2017 2:14:43 AM okhttp3.mockwebserver.MockWebServer$2 execute
+INFORMAÇÕES: MockWebServer[54340] starting to accept connections
+dez 22, 2017 2:14:43 AM okhttp3.mockwebserver.MockWebServer$2 acceptConnections
+INFORMAÇÕES: MockWebServer[54340] done accepting connections: Socket closed
+dez 22, 2017 2:14:43 AM okhttp3.mockwebserver.MockWebServer$3 processOneRequest
+INFORMAÇÕES: MockWebServer[54340] received request: POST /w/api.php?action=edit&amp;format=json HTTP/1.1 and responded: HTTP/1.1 200 OK
+dez 22, 2017 2:14:43 AM okhttp3.mockwebserver.MockWebServer$2 execute
+INFORMAÇÕES: MockWebServer[58062] starting to accept connections
+dez 22, 2017 2:14:43 AM okhttp3.mockwebserver.MockWebServer$2 acceptConnections
+INFORMAÇÕES: MockWebServer[58062] done accepting connections: Socket closed
+dez 22, 2017 2:14:43 AM okhttp3.mockwebserver.MockWebServer$3 processOneRequest
+INFORMAÇÕES: MockWebServer[58062] received request: POST /w/api.php?action=edit&amp;format=json HTTP/1.1 and responded: HTTP/1.1 200 OK
+dez 22, 2017 2:14:43 AM okhttp3.mockwebserver.MockWebServer$2 execute
+INFORMAÇÕES: MockWebServer[48252] starting to accept connections
+dez 22, 2017 2:14:43 AM okhttp3.mockwebserver.MockWebServer$2 acceptConnections
+INFORMAÇÕES: MockWebServer[48252] done accepting connections: Socket closed
+dez 22, 2017 2:14:43 AM okhttp3.mockwebserver.MockWebServer$3 processOneRequest
+INFORMAÇÕES: MockWebServer[48252] received request: POST /w/api.php?action=edit&amp;format=json HTTP/1.1 and responded: HTTP/1.1 200 OK
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 3.4</a> at 22/12/2017 02:14:44</p>
+</div>
+</div>
+</body>
+</html>

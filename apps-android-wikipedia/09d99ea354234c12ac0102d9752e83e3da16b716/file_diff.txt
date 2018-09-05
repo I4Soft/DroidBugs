@@ -1,0 +1,5 @@
+app/src/main/java/org/wikipedia/edit/EditClient.java
+app/src/main/java/org/wikipedia/edit/EditSectionActivity.java
+app/src/main/java/org/wikipedia/edit/UserNotLoggedInException.java
+app/src/test/java/org/wikipedia/edit/EditUnitTest.java
+app/src/test/res/raw/edit_user_not_logged_in.json

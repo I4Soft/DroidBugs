@@ -1,0 +1,46 @@
+
+RJ_Fix app/test copied to PRJ_Bug app/test
+app/androidTest excluded
+app/build.gradle - Line 93 commented
+	//signingConfig signingConfigs.debug
+app/build.gradle - Lines 96 to 128 commented
+	/*prod {
+            versionName computeVersionName('r')
+            //signingConfig signingConfigs.prod
+        }
+        releasesprod {
+            versionName computeVersionName('releasesprod')
+            //signingConfig signingConfigs.prod
+        }
+        alpha {
+            versionName computeVersionName('alpha')
+            applicationIdSuffix 'alpha'
+            //signingConfig signingConfigs.debug
+            testInstrumentationRunner 'org.wikipedia.test.AndroidTestRunner'
+        }
+        beta {
+            versionName computeVersionName('beta')
+            applicationIdSuffix 'beta'
+            //signingConfig signingConfigs.prod
+        }
+        amazon {
+            versionName computeVersionName('amazon')
+            //signingConfig signingConfigs.prod
+        }
+        fdroid {
+            versionName computeVersionName('fdroid')
+            //signingConfig signingConfigs.prod
+        }
+        custom {
+            versionName computeVersionName(customChannel)
+            // next line is for injecting a custom channel value into the custom/AndroidManifest.xml
+            manifestPlaceholders = [customChannel:getProperty('customChannel').toString()]
+            //signingConfig signingConfigs.prod
+        }*/
+NearbyUnitTest lines 98 to 103 commented
+    /*@Test public void testGetDistanceLabelKilometers() throws Throwable {
+        Location locationB = new Location("b");
+        locationB.setLatitude(0.0d);
+        locationB.setLongitude(LONGER_DISTANCE);
+        assertThat("1.11 km", is(getDistanceLabel(locationB)));
+    }*/

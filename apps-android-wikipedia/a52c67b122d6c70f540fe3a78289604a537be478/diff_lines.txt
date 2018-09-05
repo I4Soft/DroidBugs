@@ -1,0 +1,27 @@
+diff a52c67b122d6c70f540fe3a78289604a537be478/Files_Previous/NamespaceTypeAdapter.javaa52c67b122d6c70f540fe3a78289604a537be478/Files_Updated/NamespaceTypeAdapter.java
+4a5
+> import com.google.gson.stream.JsonToken;
+20,21c21,27
+<         int ns = in.nextInt();
+<         return Namespace.of(ns);
+---
+>         if (in.peek() == JsonToken.STRING) {
+>             // Prior to 3210ce44, we marshaled Namespace as the name string of the enum, instead of
+>             // the code number. This introduces a backwards-compatible check for the string value.
+>             // TODO: remove after April 2017, when all older namespaces have been deserialized.
+>             return Namespace.valueOf(in.nextString());
+>         }
+>         return Namespace.of(in.nextInt());
+diff a52c67b122d6c70f540fe3a78289604a537be478/Files_Previous/NamespaceTypeAdapterTest.java a52c67b122d6c70f540fe3a78289604a537be478/Files_Updated/NamespaceTypeAdapterTest.java
+35a36,46
+>     @Test public void testReadOldData() throws Throwable {
+>         // Prior to 3210ce44, we marshaled Namespace as the name string of the enum, instead of
+>         // the code number, and when we switched to using the code number, we didn't introduce
+>         // backwards-compatible checks for the old-style strings that may still be present in
+>         // some local serialized data.
+>         // TODO: remove after April 2017?
+>         String marshaledStr = namespace == null ? "null" : "\"" + namespace.name() + "\"";
+>         Namespace ns = unmarshal(Namespace.class, marshaledStr);
+>         assertThat(ns, is(namespace));
+>     }
+> 

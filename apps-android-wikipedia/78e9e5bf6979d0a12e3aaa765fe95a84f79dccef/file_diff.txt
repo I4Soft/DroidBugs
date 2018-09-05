@@ -1,0 +1,16 @@
+app/src/androidTest/java/org/wikipedia/feed/view/PageTitleListCardItemViewTest.java
+app/src/main/java/org/wikipedia/feed/becauseyouread/BecauseYouReadItemCard.java
+app/src/main/java/org/wikipedia/feed/continuereading/ContinueReadingCard.java
+app/src/main/java/org/wikipedia/feed/view/PageTitleListCardItemView.java
+app/src/main/java/org/wikipedia/nearby/NearbyPage.java
+app/src/main/java/org/wikipedia/page/DisambigListAdapter.java
+app/src/main/java/org/wikipedia/page/PageTitle.java
+app/src/main/java/org/wikipedia/page/bottomcontent/BottomContentHandler.java
+app/src/main/java/org/wikipedia/page/leadimages/LeadImagesHandler.java
+app/src/main/java/org/wikipedia/page/snippet/ShareHandler.java
+app/src/main/java/org/wikipedia/search/FullSearchArticlesTask.java
+app/src/main/java/org/wikipedia/search/SearchResultsFragment.java
+app/src/main/java/org/wikipedia/search/TitleSearchTask.java
+app/src/main/java/org/wikipedia/server/mwapi/MwPageLead.java
+app/src/main/java/org/wikipedia/server/restbase/RbPageLead.java
+app/src/test/java/org/wikipedia/server/BasePageLeadTest.java

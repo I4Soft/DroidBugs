@@ -1,0 +1,117 @@
+diff 78e9e5bf6979d0a12e3aaa765fe95a84f79dccef/Files_Previous/BasePageLeadTest.java 78e9e5bf6979d0a12e3aaa765fe95a84f79dccef/Files_Updated/BasePageLeadTest.java
+46,47c46
+<         // Note the capitalization of the first character on the next assertion:
+<         assertThat(props.getDescription(), is("Main page of a Wikimedia project"));
+---
+>         assertThat(props.getDescription(), is("main page of a Wikimedia project"));
+diff 78e9e5bf6979d0a12e3aaa765fe95a84f79dccef/Files_Previous/BecauseYouReadItemCard.java 78e9e5bf6979d0a12e3aaa765fe95a84f79dccef/Files_Updated/BecauseYouReadItemCard.java
+7a8
+> import org.apache.commons.lang3.StringUtils;
+31c32
+<         return title.getDescription();
+---
+>         return StringUtils.capitalize(title.getDescription());
+diff 78e9e5bf6979d0a12e3aaa765fe95a84f79dccef/Files_Previous/BottomContentHandler.java 78e9e5bf6979d0a12e3aaa765fe95a84f79dccef/Files_Updated/BottomContentHandler.java
+21a22
+> import org.apache.commons.lang3.StringUtils;
+448c449
+<             descriptionText.setText(result.getPageTitle().getDescription());
+---
+>             descriptionText.setText(StringUtils.capitalize(result.getPageTitle().getDescription()));
+diff 78e9e5bf6979d0a12e3aaa765fe95a84f79dccef/Files_Previous/ContinueReadingCard.java 78e9e5bf6979d0a12e3aaa765fe95a84f79dccef/Files_Updated/ContinueReadingCard.java
+7a8
+> import org.apache.commons.lang3.StringUtils;
+27c28
+<         return entry.getTitle().getDescription();
+---
+>         return StringUtils.capitalize(entry.getTitle().getDescription());
+diff 78e9e5bf6979d0a12e3aaa765fe95a84f79dccef/Files_Previous/DisambigListAdapter.java 78e9e5bf6979d0a12e3aaa765fe95a84f79dccef/Files_Updated/DisambigListAdapter.java
+13a14
+> import org.apache.commons.lang3.StringUtils;
+131c132
+<         holder.description.setText(item.getTitle().getDescription());
+---
+>         holder.description.setText(StringUtils.capitalize(item.getTitle().getDescription()));
+diff 78e9e5bf6979d0a12e3aaa765fe95a84f79dccef/Files_Previous/FullSearchArticlesTask.java 78e9e5bf6979d0a12e3aaa765fe95a84f79dccef/Files_Updated/FullSearchArticlesTask.java
+15d14
+< import org.wikipedia.util.StringUtil;
+134c133
+<                     description = StringUtil.capitalizeFirstChar(arr.getString(0));
+---
+>                     description = arr.getString(0);
+diff 78e9e5bf6979d0a12e3aaa765fe95a84f79dccef/Files_Previous/LeadImagesHandler.java 78e9e5bf6979d0a12e3aaa765fe95a84f79dccef/Files_Updated/LeadImagesHandler.java
+13a14
+> import org.apache.commons.lang3.StringUtils;
+199c200
+<             articleHeaderView.setSubtitle(description);
+---
+>             articleHeaderView.setSubtitle(StringUtils.capitalize(description));
+diff 78e9e5bf6979d0a12e3aaa765fe95a84f79dccef/Files_Previous/MwPageLead.java 78e9e5bf6979d0a12e3aaa765fe95a84f79dccef/Files_Updated/MwPageLead.java
+21,22d20
+< import static org.wikipedia.util.StringUtil.capitalizeFirstChar;
+< 
+183c181
+<             return description != null ? capitalizeFirstChar(description) : null;
+---
+>             return description;
+diff 78e9e5bf6979d0a12e3aaa765fe95a84f79dccef/Files_Previous/NearbyPage.java 78e9e5bf6979d0a12e3aaa765fe95a84f79dccef/Files_Updated/NearbyPage.java
+11,12d10
+< import static org.wikipedia.util.StringUtil.capitalizeFirstChar;
+< 
+70c68
+<                     description = capitalizeFirstChar(descArray.optString(0));
+---
+>                     description = descArray.optString(0);
+diff 78e9e5bf6979d0a12e3aaa765fe95a84f79dccef/Files_Previous/PageTitle.java 78e9e5bf6979d0a12e3aaa765fe95a84f79dccef/Files_Updated/PageTitle.java
+23d22
+< import static org.wikipedia.util.StringUtil.capitalizeFirstChar;
+186c185
+<         this.description = description != null ? capitalizeFirstChar(description) : null;
+---
+>         this.description = description;
+diff 78e9e5bf6979d0a12e3aaa765fe95a84f79dccef/Files_Previous/PageTitleListCardItemView.java 78e9e5bf6979d0a12e3aaa765fe95a84f79dccef/Files_Updated/PageTitleListCardItemView.java
+15a16
+> import org.apache.commons.lang3.StringUtils;
+95c96
+<         subtitleView.setText(text);
+---
+>         subtitleView.setText(text != null ? StringUtils.capitalize(text.toString()) : null);
+diff 78e9e5bf6979d0a12e3aaa765fe95a84f79dccef/Files_Previous/PageTitleListCardItemViewTest.java 78e9e5bf6979d0a12e3aaa765fe95a84f79dccef/Files_Updated/PageTitleListCardItemViewTest.java
+80c80
+<         assertThat(subject.titleView.getText(), is(emptyIfNull(text)));
+---
+>         assertThat(subject.titleView.getText().toString(), is(emptyIfNull(text)));
+87c87
+<         assertThat(subject.subtitleView.getText(), is(emptyIfNull(text)));
+---
+>         assertThat(subject.subtitleView.getText().toString(), is(emptyIfNull(text)));
+diff 78e9e5bf6979d0a12e3aaa765fe95a84f79dccef/Files_Previous/RbPageLead.java 78e9e5bf6979d0a12e3aaa765fe95a84f79dccef/Files_Updated/RbPageLead.java
+27,28d26
+< import static org.wikipedia.util.StringUtil.capitalizeFirstChar;
+< 
+166c164
+<         return description != null ? capitalizeFirstChar(description) : null;
+---
+>         return description;
+diff 78e9e5bf6979d0a12e3aaa765fe95a84f79dccef/Files_Previous/SearchResultsFragment.java 78e9e5bf6979d0a12e3aaa765fe95a84f79dccef/Files_Updated/SearchResultsFragment.java
+20a21
+> import org.apache.commons.lang3.StringUtils;
+524c525
+<                 descriptionText.setText(result.getPageTitle().getDescription());
+---
+>                 descriptionText.setText(StringUtils.capitalize(result.getPageTitle().getDescription()));
+diff 78e9e5bf6979d0a12e3aaa765fe95a84f79dccef/Files_Previous/ShareHandler.java 78e9e5bf6979d0a12e3aaa765fe95a84f79dccef/Files_Updated/ShareHandler.java
+20a21
+> import org.apache.commons.lang3.StringUtils;
+141c142
+<                         fragment.getPage().isMainPage() ? "" : title.getDescription(),
+---
+>                         fragment.getPage().isMainPage() ? "" : StringUtils.capitalize(title.getDescription()),
+diff 78e9e5bf6979d0a12e3aaa765fe95a84f79dccef/Files_Previous/TitleSearchTask.java 78e9e5bf6979d0a12e3aaa765fe95a84f79dccef/Files_Updated/TitleSearchTask.java
+21,22d20
+< import static org.wikipedia.util.StringUtil.capitalizeFirstChar;
+< 
+140c138
+<                     description = capitalizeFirstChar(arr.getString(0));
+---
+>                     description = arr.getString(0);

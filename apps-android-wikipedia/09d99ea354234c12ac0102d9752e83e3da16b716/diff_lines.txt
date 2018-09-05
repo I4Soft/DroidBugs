@@ -1,0 +1,48 @@
+diff 09d99ea354234c12ac0102d9752e83e3da16b716/Files_Previous/EditClient.java 09d99ea354234c12ac0102d9752e83e3da16b716/Files_Updated/EditClient.java
+70a71,72
+>                 } else if ("assertuserfailed".equals(response.body().code())) {
+>                     cb.failure(call, new UserNotLoggedInException());
+diff 09d99ea354234c12ac0102d9752e83e3da16b716/Files_Previous/EditSectionActivity.java 09d99ea354234c12ac0102d9752e83e3da16b716/Files_Updated/EditSectionActivity.java
+340a341,342
+>                                 } else if (caught instanceof UserNotLoggedInException) {
+>                                     retry();
+344c346
+<                                     L.w("Caught " + caught.toString());
+---
+>                                     L.w(caught);
+384a387,395
+>     private void retry() {
+>         // looks like our session expired.
+>         app.getEditTokenStorage().clearAllTokens();
+>         app.getCookieManager().clearAllCookies();
+> 
+>         User user = User.getUser();
+>         doLoginAndSave(user);
+>     }
+> 
+391,398c402,403
+<         if (User.isLoggedIn() && ("badtoken".equals(code)
+<                 || "assertuserfailed".equals(code))) {
+<             // looks like our session expired.
+<             app.getEditTokenStorage().clearAllTokens();
+<             app.getCookieManager().clearAllCookies();
+< 
+<             User user = User.getUser();
+<             doLoginAndSave(user);
+---
+>         if (User.isLoggedIn() && ("badtoken".equals(code) || "assertuserfailed".equals(code))) {
+>             retry();
+diff 09d99ea354234c12ac0102d9752e83e3da16b716/Files_Previous/EditUnitTest.java 09d99ea354234c12ac0102d9752e83e3da16b716/Files_Updated/EditUnitTest.java
+47a48,57
+>     @Test public void testRequestUserNotLoggedIn() throws Throwable {
+>         enqueueFromFile("edit_user_not_logged_in.json");
+> 
+>         Callback cb = mock(Callback.class);
+>         Call<Edit> call = request(cb);
+> 
+>         server().takeRequest();
+>         assertExpectedEditError(call, cb, "User not logged in.");
+>     }
+> 
+Somente em 09d99ea354234c12ac0102d9752e83e3da16b716/Files_Updated: edit_user_not_logged_in.json
+Somente em 09d99ea354234c12ac0102d9752e83e3da16b716/Files_Updated: UserNotLoggedInException.java

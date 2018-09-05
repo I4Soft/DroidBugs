@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class org.wikipedia.nearby.NearbyClientTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class org.wikipedia.nearby.NearbyClientTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.wikipedia.nearby.html">org.wikipedia.nearby</a> &gt; NearbyClientTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">8</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.170s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testLocationMissingCoordsIsExcludedFromResults</td>
+<td>0.022s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testLocationMissingLatOnlyIsExcludedFromResults</td>
+<td>0.014s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testLocationMissingLonOnlyIsExcludedFromResults</td>
+<td>0.013s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRequestNoResults</td>
+<td>0.015s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRequestResponseApiError</td>
+<td>0.026s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRequestResponseFailure</td>
+<td>0.037s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRequestResponseMalformed</td>
+<td>0.022s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRequestSuccessHasResults</td>
+<td>0.021s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>W/unknown:Fresco: Fresco has already been initialized! `Fresco.initialize(...)` should only be called 1 single time to avoid memory leaks!
+I/org.wikipedia.auth.AccountUtil: createAccountForLoggedInUser():21: account creation successful
+I/org.wikipedia.WikipediaApp: onCreate():180: Registered reading list page observer
+D/OkHttp: --&gt; GET http://localhost:43700/w/api.php?action=query&amp;format=json&amp;prop=coordinates|pageimages|pageterms&amp;colimit=50&amp;piprop=thumbnail&amp;pilicense=any&amp;pilimit=50&amp;wbptterms=description&amp;generator=geosearch&amp;ggslimit=50&amp;continue=&amp;ggscoord=0.000000|0.000000&amp;ggsradius=0.0&amp;pithumbsize=320 http/1.1
+V/okhttp3.internal.http.RealInterceptorChain: proceed():92: http://localhost:43700/w/api.php?action=query&amp;format=json&amp;prop=coordinates|pageimages|pageterms&amp;colimit=50&amp;piprop=thumbnail&amp;pilicense=any&amp;pilimit=50&amp;wbptterms=description&amp;generator=geosearch&amp;ggslimit=50&amp;continue=&amp;ggscoord=0.000000|0.000000&amp;ggsradius=0.0&amp;pithumbsize=320 [net]
+D/OkHttp: &lt;-- HTTP FAILED: org.wikipedia.dataclient.okhttp.HttpStatusException
+W/unknown:Fresco: Fresco has already been initialized! `Fresco.initialize(...)` should only be called 1 single time to avoid memory leaks!
+I/org.wikipedia.auth.AccountUtil: createAccountForLoggedInUser():21: account creation successful
+I/org.wikipedia.WikipediaApp: onCreate():180: Registered reading list page observer
+D/OkHttp: --&gt; GET http://localhost:36728/w/api.php?action=query&amp;format=json&amp;prop=coordinates|pageimages|pageterms&amp;colimit=50&amp;piprop=thumbnail&amp;pilicense=any&amp;pilimit=50&amp;wbptterms=description&amp;generator=geosearch&amp;ggslimit=50&amp;continue=&amp;ggscoord=0.000000|0.000000&amp;ggsradius=0.0&amp;pithumbsize=320 http/1.1
+V/okhttp3.internal.http.RealInterceptorChain: proceed():92: http://localhost:36728/w/api.php?action=query&amp;format=json&amp;prop=coordinates|pageimages|pageterms&amp;colimit=50&amp;piprop=thumbnail&amp;pilicense=any&amp;pilimit=50&amp;wbptterms=description&amp;generator=geosearch&amp;ggslimit=50&amp;continue=&amp;ggscoord=0.000000|0.000000&amp;ggsradius=0.0&amp;pithumbsize=320 [net]
+D/OkHttp: &lt;-- 200 OK http://localhost:36728/w/api.php?action=query&amp;format=json&amp;prop=coordinates|pageimages|pageterms&amp;colimit=50&amp;piprop=thumbnail&amp;pilicense=any&amp;pilimit=50&amp;wbptterms=description&amp;generator=geosearch&amp;ggslimit=50&amp;continue=&amp;ggscoord=0.000000|0.000000&amp;ggsradius=0.0&amp;pithumbsize=320 (4ms, 210-byte body)
+W/unknown:Fresco: Fresco has already been initialized! `Fresco.initialize(...)` should only be called 1 single time to avoid memory leaks!
+I/org.wikipedia.auth.AccountUtil: createAccountForLoggedInUser():21: account creation successful
+I/org.wikipedia.WikipediaApp: onCreate():180: Registered reading list page observer
+D/OkHttp: --&gt; GET http://localhost:55540/w/api.php?action=query&amp;format=json&amp;prop=coordinates|pageimages|pageterms&amp;colimit=50&amp;piprop=thumbnail&amp;pilicense=any&amp;pilimit=50&amp;wbptterms=description&amp;generator=geosearch&amp;ggslimit=50&amp;continue=&amp;ggscoord=0.000000|0.000000&amp;ggsradius=0.0&amp;pithumbsize=320 http/1.1
+V/okhttp3.internal.http.RealInterceptorChain: proceed():92: http://localhost:55540/w/api.php?action=query&amp;format=json&amp;prop=coordinates|pageimages|pageterms&amp;colimit=50&amp;piprop=thumbnail&amp;pilicense=any&amp;pilimit=50&amp;wbptterms=description&amp;generator=geosearch&amp;ggslimit=50&amp;continue=&amp;ggscoord=0.000000|0.000000&amp;ggsradius=0.0&amp;pithumbsize=320 [net]
+D/OkHttp: &lt;-- 200 OK http://localhost:55540/w/api.php?action=query&amp;format=json&amp;prop=coordinates|pageimages|pageterms&amp;colimit=50&amp;piprop=thumbnail&amp;pilicense=any&amp;pilimit=50&amp;wbptterms=description&amp;generator=geosearch&amp;ggslimit=50&amp;continue=&amp;ggscoord=0.000000|0.000000&amp;ggsradius=0.0&amp;pithumbsize=320 (2ms, 140-byte body)
+W/unknown:Fresco: Fresco has already been initialized! `Fresco.initialize(...)` should only be called 1 single time to avoid memory leaks!
+I/org.wikipedia.auth.AccountUtil: createAccountForLoggedInUser():21: account creation successful
+I/org.wikipedia.WikipediaApp: onCreate():180: Registered reading list page observer
+D/OkHttp: --&gt; GET http://localhost:56266/w/api.php?action=query&amp;format=json&amp;prop=coordinates|pageimages|pageterms&amp;colimit=50&amp;piprop=thumbnail&amp;pilicense=any&amp;pilimit=50&amp;wbptterms=description&amp;generator=geosearch&amp;ggslimit=50&amp;continue=&amp;ggscoord=0.000000|0.000000&amp;ggsradius=0.0&amp;pithumbsize=320 http/1.1
+V/okhttp3.internal.http.RealInterceptorChain: proceed():92: http://localhost:56266/w/api.php?action=query&amp;format=json&amp;prop=coordinates|pageimages|pageterms&amp;colimit=50&amp;piprop=thumbnail&amp;pilicense=any&amp;pilimit=50&amp;wbptterms=description&amp;generator=geosearch&amp;ggslimit=50&amp;continue=&amp;ggscoord=0.000000|0.000000&amp;ggsradius=0.0&amp;pithumbsize=320 [net]
+D/OkHttp: &lt;-- 200 OK http://localhost:56266/w/api.php?action=query&amp;format=json&amp;prop=coordinates|pageimages|pageterms&amp;colimit=50&amp;piprop=thumbnail&amp;pilicense=any&amp;pilimit=50&amp;wbptterms=description&amp;generator=geosearch&amp;ggslimit=50&amp;continue=&amp;ggscoord=0.000000|0.000000&amp;ggsradius=0.0&amp;pithumbsize=320 (6ms, 477-byte body)
+W/unknown:Fresco: Fresco has already been initialized! `Fresco.initialize(...)` should only be called 1 single time to avoid memory leaks!
+I/org.wikipedia.auth.AccountUtil: createAccountForLoggedInUser():21: account creation successful
+I/org.wikipedia.WikipediaApp: onCreate():180: Registered reading list page observer
+D/OkHttp: --&gt; GET http://localhost:47484/w/api.php?action=query&amp;format=json&amp;prop=coordinates|pageimages|pageterms&amp;colimit=50&amp;piprop=thumbnail&amp;pilicense=any&amp;pilimit=50&amp;wbptterms=description&amp;generator=geosearch&amp;ggslimit=50&amp;continue=&amp;ggscoord=0.000000|0.000000&amp;ggsradius=0.0&amp;pithumbsize=320 http/1.1
+V/okhttp3.internal.http.RealInterceptorChain: proceed():92: http://localhost:47484/w/api.php?action=query&amp;format=json&amp;prop=coordinates|pageimages|pageterms&amp;colimit=50&amp;piprop=thumbnail&amp;pilicense=any&amp;pilimit=50&amp;wbptterms=description&amp;generator=geosearch&amp;ggslimit=50&amp;continue=&amp;ggscoord=0.000000|0.000000&amp;ggsradius=0.0&amp;pithumbsize=320 [net]
+D/OkHttp: &lt;-- 200 OK http://localhost:47484/w/api.php?action=query&amp;format=json&amp;prop=coordinates|pageimages|pageterms&amp;colimit=50&amp;piprop=thumbnail&amp;pilicense=any&amp;pilimit=50&amp;wbptterms=description&amp;generator=geosearch&amp;ggslimit=50&amp;continue=&amp;ggscoord=0.000000|0.000000&amp;ggsradius=0.0&amp;pithumbsize=320 (2ms, 627-byte body)
+W/unknown:Fresco: Fresco has already been initialized! `Fresco.initialize(...)` should only be called 1 single time to avoid memory leaks!
+I/org.wikipedia.auth.AccountUtil: createAccountForLoggedInUser():21: account creation successful
+I/org.wikipedia.WikipediaApp: onCreate():180: Registered reading list page observer
+D/OkHttp: --&gt; GET http://localhost:43337/w/api.php?action=query&amp;format=json&amp;prop=coordinates|pageimages|pageterms&amp;colimit=50&amp;piprop=thumbnail&amp;pilicense=any&amp;pilimit=50&amp;wbptterms=description&amp;generator=geosearch&amp;ggslimit=50&amp;continue=&amp;ggscoord=0.000000|0.000000&amp;ggsradius=0.0&amp;pithumbsize=320 http/1.1
+V/okhttp3.internal.http.RealInterceptorChain: proceed():92: http://localhost:43337/w/api.php?action=query&amp;format=json&amp;prop=coordinates|pageimages|pageterms&amp;colimit=50&amp;piprop=thumbnail&amp;pilicense=any&amp;pilimit=50&amp;wbptterms=description&amp;generator=geosearch&amp;ggslimit=50&amp;continue=&amp;ggscoord=0.000000|0.000000&amp;ggsradius=0.0&amp;pithumbsize=320 [net]
+D/OkHttp: &lt;-- 200 OK http://localhost:43337/w/api.php?action=query&amp;format=json&amp;prop=coordinates|pageimages|pageterms&amp;colimit=50&amp;piprop=thumbnail&amp;pilicense=any&amp;pilimit=50&amp;wbptterms=description&amp;generator=geosearch&amp;ggslimit=50&amp;continue=&amp;ggscoord=0.000000|0.000000&amp;ggsradius=0.0&amp;pithumbsize=320 (2ms, 625-byte body)
+W/unknown:Fresco: Fresco has already been initialized! `Fresco.initialize(...)` should only be called 1 single time to avoid memory leaks!
+I/org.wikipedia.auth.AccountUtil: createAccountForLoggedInUser():21: account creation successful
+I/org.wikipedia.WikipediaApp: onCreate():180: Registered reading list page observer
+D/OkHttp: --&gt; GET http://localhost:38262/w/api.php?action=query&amp;format=json&amp;prop=coordinates|pageimages|pageterms&amp;colimit=50&amp;piprop=thumbnail&amp;pilicense=any&amp;pilimit=50&amp;wbptterms=description&amp;generator=geosearch&amp;ggslimit=50&amp;continue=&amp;ggscoord=0.000000|0.000000&amp;ggsradius=0.0&amp;pithumbsize=320 http/1.1
+V/okhttp3.internal.http.RealInterceptorChain: proceed():92: http://localhost:38262/w/api.php?action=query&amp;format=json&amp;prop=coordinates|pageimages|pageterms&amp;colimit=50&amp;piprop=thumbnail&amp;pilicense=any&amp;pilimit=50&amp;wbptterms=description&amp;generator=geosearch&amp;ggslimit=50&amp;continue=&amp;ggscoord=0.000000|0.000000&amp;ggsradius=0.0&amp;pithumbsize=320 [net]
+D/OkHttp: &lt;-- 200 OK http://localhost:38262/w/api.php?action=query&amp;format=json&amp;prop=coordinates|pageimages|pageterms&amp;colimit=50&amp;piprop=thumbnail&amp;pilicense=any&amp;pilimit=50&amp;wbptterms=description&amp;generator=geosearch&amp;ggslimit=50&amp;continue=&amp;ggscoord=0.000000|0.000000&amp;ggsradius=0.0&amp;pithumbsize=320 (2ms, 1712-byte body)
+W/unknown:Fresco: Fresco has already been initialized! `Fresco.initialize(...)` should only be called 1 single time to avoid memory leaks!
+I/org.wikipedia.auth.AccountUtil: createAccountForLoggedInUser():21: account creation successful
+I/org.wikipedia.WikipediaApp: onCreate():180: Registered reading list page observer
+D/OkHttp: --&gt; GET http://localhost:54319/w/api.php?action=query&amp;format=json&amp;prop=coordinates|pageimages|pageterms&amp;colimit=50&amp;piprop=thumbnail&amp;pilicense=any&amp;pilimit=50&amp;wbptterms=description&amp;generator=geosearch&amp;ggslimit=50&amp;continue=&amp;ggscoord=0.000000|0.000000&amp;ggsradius=0.0&amp;pithumbsize=320 http/1.1
+V/okhttp3.internal.http.RealInterceptorChain: proceed():92: http://localhost:54319/w/api.php?action=query&amp;format=json&amp;prop=coordinates|pageimages|pageterms&amp;colimit=50&amp;piprop=thumbnail&amp;pilicense=any&amp;pilimit=50&amp;wbptterms=description&amp;generator=geosearch&amp;ggslimit=50&amp;continue=&amp;ggscoord=0.000000|0.000000&amp;ggsradius=0.0&amp;pithumbsize=320 [net]
+D/OkHttp: &lt;-- 200 OK http://localhost:54319/w/api.php?action=query&amp;format=json&amp;prop=coordinates|pageimages|pageterms&amp;colimit=50&amp;piprop=thumbnail&amp;pilicense=any&amp;pilimit=50&amp;wbptterms=description&amp;generator=geosearch&amp;ggslimit=50&amp;continue=&amp;ggscoord=0.000000|0.000000&amp;ggsradius=0.0&amp;pithumbsize=320 (2ms, 15-byte body)
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>dez 22, 2017 2:14:12 AM okhttp3.mockwebserver.MockWebServer$2 execute
+INFORMAÇÕES: MockWebServer[43700] starting to accept connections
+dez 22, 2017 2:14:12 AM okhttp3.mockwebserver.MockWebServer$3 processOneRequest
+INFORMAÇÕES: MockWebServer[43700] received request: GET /w/api.php?action=query&amp;format=json&amp;prop=coordinates|pageimages|pageterms&amp;colimit=50&amp;piprop=thumbnail&amp;pilicense=any&amp;pilimit=50&amp;wbptterms=description&amp;generator=geosearch&amp;ggslimit=50&amp;continue=&amp;ggscoord=0.000000|0.000000&amp;ggsradius=0.0&amp;pithumbsize=320 HTTP/1.1 and responded: HTTP/1.1 404 Client Error
+dez 22, 2017 2:14:12 AM okhttp3.mockwebserver.MockWebServer$2 acceptConnections
+INFORMAÇÕES: MockWebServer[43700] done accepting connections: Socket closed
+dez 22, 2017 2:14:12 AM okhttp3.mockwebserver.MockWebServer$2 execute
+INFORMAÇÕES: MockWebServer[36728] starting to accept connections
+dez 22, 2017 2:14:12 AM okhttp3.mockwebserver.MockWebServer$3 processOneRequest
+INFORMAÇÕES: MockWebServer[36728] received request: GET /w/api.php?action=query&amp;format=json&amp;prop=coordinates|pageimages|pageterms&amp;colimit=50&amp;piprop=thumbnail&amp;pilicense=any&amp;pilimit=50&amp;wbptterms=description&amp;generator=geosearch&amp;ggslimit=50&amp;continue=&amp;ggscoord=0.000000|0.000000&amp;ggsradius=0.0&amp;pithumbsize=320 HTTP/1.1 and responded: HTTP/1.1 200 OK
+dez 22, 2017 2:14:12 AM okhttp3.mockwebserver.MockWebServer$2 acceptConnections
+INFORMAÇÕES: MockWebServer[36728] done accepting connections: Socket closed
+dez 22, 2017 2:14:12 AM okhttp3.mockwebserver.MockWebServer$2 execute
+INFORMAÇÕES: MockWebServer[55540] starting to accept connections
+dez 22, 2017 2:14:12 AM okhttp3.mockwebserver.MockWebServer$3 processOneRequest
+INFORMAÇÕES: MockWebServer[55540] received request: GET /w/api.php?action=query&amp;format=json&amp;prop=coordinates|pageimages|pageterms&amp;colimit=50&amp;piprop=thumbnail&amp;pilicense=any&amp;pilimit=50&amp;wbptterms=description&amp;generator=geosearch&amp;ggslimit=50&amp;continue=&amp;ggscoord=0.000000|0.000000&amp;ggsradius=0.0&amp;pithumbsize=320 HTTP/1.1 and responded: HTTP/1.1 200 OK
+dez 22, 2017 2:14:12 AM okhttp3.mockwebserver.MockWebServer$2 acceptConnections
+INFORMAÇÕES: MockWebServer[55540] done accepting connections: Socket closed
+dez 22, 2017 2:14:12 AM okhttp3.mockwebserver.MockWebServer$2 execute
+INFORMAÇÕES: MockWebServer[56266] starting to accept connections
+dez 22, 2017 2:14:12 AM okhttp3.mockwebserver.MockWebServer$3 processOneRequest
+INFORMAÇÕES: MockWebServer[56266] received request: GET /w/api.php?action=query&amp;format=json&amp;prop=coordinates|pageimages|pageterms&amp;colimit=50&amp;piprop=thumbnail&amp;pilicense=any&amp;pilimit=50&amp;wbptterms=description&amp;generator=geosearch&amp;ggslimit=50&amp;continue=&amp;ggscoord=0.000000|0.000000&amp;ggsradius=0.0&amp;pithumbsize=320 HTTP/1.1 and responded: HTTP/1.1 200 OK
+dez 22, 2017 2:14:12 AM okhttp3.mockwebserver.MockWebServer$2 acceptConnections
+INFORMAÇÕES: MockWebServer[56266] done accepting connections: Socket closed
+dez 22, 2017 2:14:12 AM okhttp3.mockwebserver.MockWebServer$2 execute
+INFORMAÇÕES: MockWebServer[47484] starting to accept connections
+dez 22, 2017 2:14:12 AM okhttp3.mockwebserver.MockWebServer$3 processOneRequest
+INFORMAÇÕES: MockWebServer[47484] received request: GET /w/api.php?action=query&amp;format=json&amp;prop=coordinates|pageimages|pageterms&amp;colimit=50&amp;piprop=thumbnail&amp;pilicense=any&amp;pilimit=50&amp;wbptterms=description&amp;generator=geosearch&amp;ggslimit=50&amp;continue=&amp;ggscoord=0.000000|0.000000&amp;ggsradius=0.0&amp;pithumbsize=320 HTTP/1.1 and responded: HTTP/1.1 200 OK
+dez 22, 2017 2:14:12 AM okhttp3.mockwebserver.MockWebServer$2 acceptConnections
+INFORMAÇÕES: MockWebServer[47484] done accepting connections: Socket closed
+dez 22, 2017 2:14:12 AM okhttp3.mockwebserver.MockWebServer$2 execute
+INFORMAÇÕES: MockWebServer[43337] starting to accept connections
+dez 22, 2017 2:14:12 AM okhttp3.mockwebserver.MockWebServer$3 processOneRequest
+INFORMAÇÕES: MockWebServer[43337] received request: GET /w/api.php?action=query&amp;format=json&amp;prop=coordinates|pageimages|pageterms&amp;colimit=50&amp;piprop=thumbnail&amp;pilicense=any&amp;pilimit=50&amp;wbptterms=description&amp;generator=geosearch&amp;ggslimit=50&amp;continue=&amp;ggscoord=0.000000|0.000000&amp;ggsradius=0.0&amp;pithumbsize=320 HTTP/1.1 and responded: HTTP/1.1 200 OK
+dez 22, 2017 2:14:12 AM okhttp3.mockwebserver.MockWebServer$2 acceptConnections
+INFORMAÇÕES: MockWebServer[43337] done accepting connections: Socket closed
+dez 22, 2017 2:14:12 AM okhttp3.mockwebserver.MockWebServer$2 execute
+INFORMAÇÕES: MockWebServer[38262] starting to accept connections
+dez 22, 2017 2:14:12 AM okhttp3.mockwebserver.MockWebServer$3 processOneRequest
+INFORMAÇÕES: MockWebServer[38262] received request: GET /w/api.php?action=query&amp;format=json&amp;prop=coordinates|pageimages|pageterms&amp;colimit=50&amp;piprop=thumbnail&amp;pilicense=any&amp;pilimit=50&amp;wbptterms=description&amp;generator=geosearch&amp;ggslimit=50&amp;continue=&amp;ggscoord=0.000000|0.000000&amp;ggsradius=0.0&amp;pithumbsize=320 HTTP/1.1 and responded: HTTP/1.1 200 OK
+dez 22, 2017 2:14:12 AM okhttp3.mockwebserver.MockWebServer$2 acceptConnections
+INFORMAÇÕES: MockWebServer[38262] done accepting connections: Socket closed
+dez 22, 2017 2:14:12 AM okhttp3.mockwebserver.MockWebServer$2 execute
+INFORMAÇÕES: MockWebServer[54319] starting to accept connections
+dez 22, 2017 2:14:12 AM okhttp3.mockwebserver.MockWebServer$3 processOneRequest
+INFORMAÇÕES: MockWebServer[54319] received request: GET /w/api.php?action=query&amp;format=json&amp;prop=coordinates|pageimages|pageterms&amp;colimit=50&amp;piprop=thumbnail&amp;pilicense=any&amp;pilimit=50&amp;wbptterms=description&amp;generator=geosearch&amp;ggslimit=50&amp;continue=&amp;ggscoord=0.000000|0.000000&amp;ggsradius=0.0&amp;pithumbsize=320 HTTP/1.1 and responded: HTTP/1.1 200 OK
+dez 22, 2017 2:14:12 AM okhttp3.mockwebserver.MockWebServer$2 acceptConnections
+INFORMAÇÕES: MockWebServer[54319] done accepting connections: Socket closed
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 3.4</a> at 22/12/2017 02:14:14</p>
+</div>
+</div>
+</body>
+</html>

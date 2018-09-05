@@ -1,0 +1,2 @@
+Became positive in PRJ_Fix
+org.wikipedia.edit.EditUnitTest#testRequestUserNotLoggedIn

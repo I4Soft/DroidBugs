@@ -1,0 +1,4 @@
+app/src/main/java/org/wikipedia/dataclient/WikiSite.java
+app/src/main/java/org/wikipedia/json/GsonUtil.java
+app/src/main/java/org/wikipedia/json/WikiSiteTypeAdapter.java
+app/src/test/java/org/wikipedia/json/WikiSiteTypeAdapterTest.java

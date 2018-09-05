@@ -1,0 +1,2 @@
+org.wikipedia.dataclient.WikiSiteTest#testMobileAuthorityMobileAuthorityNoLanguage
+org.wikipedia.dataclient.WikiSiteTest#testMobileAuthorityMobileAuthority

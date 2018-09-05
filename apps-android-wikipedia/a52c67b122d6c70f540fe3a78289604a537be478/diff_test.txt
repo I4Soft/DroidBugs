@@ -1,0 +1,4 @@
+org.wikipedia.json.NamespaceTypeAdapterTest#testReadOldData[SPECIAL]
+org.wikipedia.json.NamespaceTypeAdapterTest#testReadOldData[MAIN]
+org.wikipedia.json.NamespaceTypeAdapterTest#testReadOldData[TALK]
+

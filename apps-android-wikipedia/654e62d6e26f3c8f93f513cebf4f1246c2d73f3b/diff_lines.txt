@@ -1,0 +1,6 @@
+diff 654e62d6e26f3c8f93f513cebf4f1246c2d73f3b/Files_Previous/Namespace.java 654e62d6e26f3c8f93f513cebf4f1246c2d73f3b/Files_Updated/Namespace.java
+81c81
+<             StringUtil.capitalizeFirstChar(string.toLowerCase());
+---
+>             string = StringUtil.capitalizeFirstChar(string.toLowerCase());
+Somente em 654e62d6e26f3c8f93f513cebf4f1246c2d73f3b/Files_Updated: NamespaceTest.java
