@@ -1,0 +1,3 @@
+diff dcad05580c3cc2f6f2c16c2d77fc08abfb35649e/Files_Previous/AbstractCursorListFragment.java dcad05580c3cc2f6f2c16c2d77fc08abfb35649e/Files_Updated/AbstractCursorListFragment.java
+346a347
+> 				//noinspection RestrictedApi

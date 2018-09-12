@@ -1,0 +1,6 @@
+org.xbmc.kore.tests.ui.music.SlideUpPanelTests
+all tests changed except by:
+panelButtonsMusicTest
+panelTitleTest
+setShuffleButtonState
+that continue negative

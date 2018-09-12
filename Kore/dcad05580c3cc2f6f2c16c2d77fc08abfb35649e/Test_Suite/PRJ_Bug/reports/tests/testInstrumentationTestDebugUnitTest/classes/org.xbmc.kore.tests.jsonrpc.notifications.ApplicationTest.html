@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class org.xbmc.kore.tests.jsonrpc.notifications.ApplicationTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class org.xbmc.kore.tests.jsonrpc.notifications.ApplicationTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.xbmc.kore.tests.jsonrpc.notifications.html">org.xbmc.kore.tests.jsonrpc.notifications</a> &gt; ApplicationTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.220s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">onVolumeChanged</td>
+<td>0.218s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">onVolumeChangedMuted</td>
+<td>0.692s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">onVolumeChangedNotMuted</td>
+<td>0.310s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>D/HostConnection: Starting method execute. Method: Application.SetVolume on host: http://localhost:8080/jsonrpc
+D/HostConnection: Opening TCP connection on host: localhost
+D/HostConnection: Sending request via TCP: {&quot;jsonrpc&quot;:&quot;2.0&quot;,&quot;method&quot;:&quot;Application.SetVolume&quot;,&quot;id&quot;:29,&quot;params&quot;:{&quot;volume&quot;:84}}
+D/HostConnection: Starting socket listener thread...
+D/HostConnection: Read from socket: {&quot;jsonrpc&quot;:&quot;2.0&quot;,&quot;id&quot;:29,&quot;result&quot;:84}
+D/HostConnection: Read from socket: {&quot;jsonrpc&quot;:&quot;2.0&quot;,&quot;method&quot;:&quot;Application.OnVolumeChanged&quot;,&quot;params&quot;:{&quot;data&quot;:{&quot;volume&quot;:84,&quot;muted&quot;:false},&quot;sender&quot;:&quot;xbmc&quot;}}
+D/HostConnection: Got a notification: Application.OnVolumeChanged
+W/MockTcpServer: processing input from /127.0.0.1 failed: java.net.SocketException: Socket closed
+D/HostConnection: Starting method execute. Method: Application.SetMute on host: http://localhost:8080/jsonrpc
+D/HostConnection: Opening TCP connection on host: localhost
+D/HostConnection: Sending request via TCP: {&quot;jsonrpc&quot;:&quot;2.0&quot;,&quot;method&quot;:&quot;Application.SetMute&quot;,&quot;id&quot;:30,&quot;params&quot;:{&quot;mute&quot;:&quot;toggle&quot;}}
+D/HostConnection: Starting socket listener thread...
+D/HostConnection: Read from socket: {&quot;jsonrpc&quot;:&quot;2.0&quot;,&quot;id&quot;:30,&quot;result&quot;:false}
+D/HostConnection: Read from socket: {&quot;jsonrpc&quot;:&quot;2.0&quot;,&quot;method&quot;:&quot;Application.OnVolumeChanged&quot;,&quot;params&quot;:{&quot;data&quot;:{&quot;volume&quot;:0,&quot;muted&quot;:false},&quot;sender&quot;:&quot;xbmc&quot;}}
+D/HostConnection: Got a notification: Application.OnVolumeChanged
+W/MockTcpServer: processing input from /127.0.0.1 failed: java.net.SocketException: Socket closed
+D/HostConnection: Starting method execute. Method: Application.SetMute on host: http://localhost:8080/jsonrpc
+D/HostConnection: Opening TCP connection on host: localhost
+D/HostConnection: Starting socket listener thread...
+D/HostConnection: Sending request via TCP: {&quot;jsonrpc&quot;:&quot;2.0&quot;,&quot;method&quot;:&quot;Application.SetMute&quot;,&quot;id&quot;:31,&quot;params&quot;:{&quot;mute&quot;:&quot;toggle&quot;}}
+W/SQLiteConnectionPool: A SQLiteConnection object for database '/tmp/android-tmp-robolectric2109207031121988763/databases/xbmc.sqlite' was leaked!  Please fix your application to end transactions in progress properly and to close the database when it is no longer needed.
+W/SQLiteConnectionPool: A SQLiteConnection object for database '/tmp/android-tmp-robolectric2109207031121988763/databases/xbmc.sqlite' was leaked!  Please fix your application to end transactions in progress properly and to close the database when it is no longer needed.
+D/HostConnection: Read from socket: {&quot;jsonrpc&quot;:&quot;2.0&quot;,&quot;id&quot;:31,&quot;result&quot;:true}
+D/HostConnection: Read from socket: {&quot;jsonrpc&quot;:&quot;2.0&quot;,&quot;method&quot;:&quot;Application.OnVolumeChanged&quot;,&quot;params&quot;:{&quot;data&quot;:{&quot;volume&quot;:0,&quot;muted&quot;:true},&quot;sender&quot;:&quot;xbmc&quot;}}
+D/HostConnection: Got a notification: Application.OnVolumeChanged
+W/MockTcpServer: processing input from /127.0.0.1 failed: java.net.SocketException: Socket closed
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 3.3</a> at 04/09/2017 18:52:40</p>
+</div>
+</div>
+</body>
+</html>

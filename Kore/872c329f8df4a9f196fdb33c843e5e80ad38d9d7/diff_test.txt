@@ -1,0 +1,4 @@
+Tests that became positive in PRJ_Fix
+
+org.xbmc.kore.tests.ui.RestoreSearchQueryListFragmentTest#searchClickBackTest
+org.xbmc.kore.tests.ui.RestoreSearchQueryViewPagerTest#searchClickBackTest

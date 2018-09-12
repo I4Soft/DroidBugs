@@ -1,0 +1,27 @@
+PRJ_Fix app/androidTest copied to PRJ_Bug app/androidTest
+app/build.gradle - Lines 3 to 10 commented
+	/*def getVersionName = { ->
+		def stdout = new ByteArrayOutputStream()
+		exec {
+		    commandLine 'git', 'describe', '--tags'
+		    standardOutput = stdout
+		}
+		return stdout.toString().trim()
+	}*/
+app/build.gradle - Lines 172 to 177 commented
+	/*
+	tasks.whenTaskAdded { task ->
+	    if (task.name.contains("testFullDebugUnitTest")) {
+		task.dependsOn assembleFullDebug
+	    }
+	}*/
+app/build.gradle - Line 42 to 44 commented
+	/*fullDebug {
+            assets.srcDirs += 'src/testUtils/assets'
+        }*/
+app/build.gradle - Line 57 and 58 commented
+	/*full {
+        }*/
+MusicActivityTests, RestoreSearchQueryViewPagerTest excluded
+SlideUpPanelTests: setShuffleButtonState, panelTitleTest, panelButtonsMusicTest commented
+

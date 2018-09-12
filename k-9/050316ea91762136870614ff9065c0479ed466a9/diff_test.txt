@@ -1,0 +1,2 @@
+com.fsck.k9.provider.EmailProviderTest#query_forThreadedMessages_showsThreadOfEmailWithSameSendTimeOnce
+
