@@ -1,11 +1,6 @@
-# BenchmarkAndroid
-An initial Benchmark for Automatic Software Repair with 13 single-bugs from 5 Open Source Android projects.
+# DroidBugs
 
-Contacts:
-
-Larissa S de Azevedo - lahazevedo07@gmail.com
-
-Celso G Camilo-Junior - celsocamilo@gmail.com
+A Benchmark for Automatic Software Repair based on the analyzes of 360 open projects for Android, each of them with more than 5,000 downloads.
 
 ## Benchmark's Composition
 
@@ -28,11 +23,10 @@ The Benchmark has 13 bugs from 5 Open Source Android apps: Wikipedia Android, K-
 
 [Astor4Android](https://github.com/kayquesousa/astor4android) is an adaptation of the original [Astor](https://github.com/SpoonLabs/astor) to work with Android applications. Please, access its original repository at [Astor4Android](https://github.com/kayquesousa/astor4android).
 
+Click [here](https://arxiv.org/abs/1809.07353) to see the DroidBugs' pre-published paper on ArXiv.
 
+### Contacts:
 
-
-
-
-
-
-
+* Larissa S de Azevedo - lahazevedo07@gmail.com
+* Celso G Camilo-Junior - celsocamilo@gmail.com
+* Altino Dantas - tinodantas@gmail.com
